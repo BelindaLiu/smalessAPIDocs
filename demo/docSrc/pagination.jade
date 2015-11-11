@@ -1,0 +1,161 @@
+h1 Pagination
+.line
+h4#pagination-states.Second Disabled and active states
+p.content-bg Links are customizable for different circumstances. Use
+   span.btn-color .disabled
+   |  for unclickable links and
+   span.btn-color .active
+   |  to indicate the current page.
+.bs-example
+   nav
+      ul.pagination
+         li.disabled
+            a(href="#" aria-label="Previous")
+               span(aria-hidden="true") &#171;
+         li.active
+            a(href="#") 1
+         li
+            a(href="#") 2
+         li
+            a(href="#") 3
+         li
+            a(href="#") 4
+         li
+            a(href="#") 5
+         li
+            a(href="#" aria-label="Next")
+               span(aria-hidden="true") &#187;
+.lineNum
+   pre
+      p 1
+      p 2
+      p 3
+      p 4
+      p 5
+      p 6
+      p 7
+      p 8
+      p 9
+      p 10
+      p 11
+
+   .code
+      pre
+         p
+         span  nav
+         p
+         span     ul
+         span.btn-color .pagination
+         p
+         span        li
+         span.btn-color .disabled
+         p
+         span           a
+         span (href="#" aria-label="Previous")
+         p
+         span           span(aria-hidden="true") &
+         span #171;
+         p
+         span        li
+         span.btn-color .active
+         p
+         span           a
+         span (href="#") 1
+         p
+         span        ...
+         p
+         span        li
+         p
+         span           a
+         span (href="#" aria-label="Next")
+         p
+         span           span(aria-hidden="true") &
+         span #187;
+
+h4#pagination-size.Second Pagination sizing
+p.content-bg Fancy larger or smaller pagination? Add
+   span.btn-color .pagination-lg
+   |  or
+   span.btn-color .pagination-sm
+   |  for additional sizes.
+.bs-example
+   nav
+      ul.pagination.pagination-lg
+         li.disabled
+            a(href="#" aria-label="Previous")
+               span(aria-hidden="true") &#171;
+         li.active
+            a(href="#") 1
+         li
+            a(href="#") 2
+         li
+            a(href="#") 3
+         li
+            a(href="#") 4
+         li
+            a(href="#") 5
+         li
+            a(href="#" aria-label="Next")
+               span(aria-hidden="true") &#187;
+   nav
+      ul.pagination
+         li.disabled
+            a(href="#" aria-label="Previous")
+               span(aria-hidden="true") &#171;
+         li.active
+            a(href="#") 1
+         li
+            a(href="#") 2
+         li
+            a(href="#") 3
+         li
+            a(href="#") 4
+         li
+            a(href="#") 5
+         li
+            a(href="#" aria-label="Next")
+               span(aria-hidden="true") &#187;
+   nav
+      ul.pagination.pagination-sm
+         li.disabled
+            a(href="#" aria-label="Previous")
+               span(aria-hidden="true") &#171;
+         li.active
+            a(href="#") 1
+         li
+            a(href="#") 2
+         li
+            a(href="#") 3
+         li
+            a(href="#") 4
+         li
+            a(href="#") 5
+         li
+            a(href="#" aria-label="Next")
+               span(aria-hidden="true") &#187;
+.lineNum
+   pre
+      p 1
+      p 2
+      p 3
+      p 4
+      p 5
+      p 6
+
+   .code
+      pre
+         p
+         span  nav
+         p
+         span     ul
+         span.btn-color .pagination.pagination-lg ...
+         p
+         span  nav
+         p
+         span     ul
+         span.btn-color .pagination ...
+         p
+         span  nav
+         p
+         span     ul
+         span.btn-color .pagination.pagination-sm ...

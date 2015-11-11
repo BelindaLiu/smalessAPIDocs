@@ -1,0 +1,94 @@
+doctype html
+html(lang='en')
+   head
+      title API Document
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      link(rel='stylesheet', href='output/bower_components/smaless/build/css/main.css')
+      link(rel='stylesheet', href='output/scss/index.css')
+
+   body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
+      .container
+         .row
+            .col-md-3
+               nav#myScrollspy
+                  ul.nav.pills
+                     li.active
+                        a(href='#color') Color
+
+                     li
+                        a(href='#buttons') Buttons
+                        ul.childHide
+                           li
+                              a(href='#button-color') Button color
+                           li
+                              a(href='#button-size') Button size
+                           li
+                              a(href='#disabled-state') Disabled state
+                           li
+                              a(href='#dropdowns') Button dropdowns
+
+                     li
+                        a(href='#button-dropdowns') Button dropdowns
+
+                     li
+                        a(href='#panels') Panels
+                        ul.childHide
+                           li
+                              a(href="#basic-panels") Basic panels
+                           li
+                              a(href="#panel-heading") Panel with heading
+                           li
+                              a(href="#panel-footer") Panel with footer
+                           li
+                              a(href="#panel-table") With tables
+
+                     li
+                        a(href='#tables') Tables
+                        ul.childHide
+                           li
+                              a(href='#base-tables') Base Tables
+                           li
+                              a(href='#tables-details') Tables details
+
+                     li
+                        a(href="#pagination") Pagination
+                        ul.childHide
+                           li
+                              a(href="#pagination-states") Disabled and active states
+                           li
+                              a(href="#pagination-size") Pagination sizing
+
+
+
+                     div.modal-footer
+                        p
+                           span © Made by Trantect team
+                        p
+                           a(href='#') Back to top
+                        p
+                           a.gh-btn(href='https://github.com/emily123/smaless')
+            .col-md-9
+               #color
+                  include docSrc/color
+
+               #buttons
+                  include docSrc/button
+
+               #button-dropdowns
+                  include docSrc/button dropdowns
+
+               #panels
+                  include docSrc/panels
+
+               #tables
+                  include docSrc/tables
+
+               #pagination
+                  include docSrc/pagination
+
+
+
+      script(type='text/javascript' src='output/bower_components/jquery/dist/jquery.js')
+      script(type='text/javascript' src='output/bower_components/bootstrap/dist/js/bootstrap.js')
+
