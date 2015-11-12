@@ -1,0 +1,204 @@
+h1 Tables
+.line
+h4#base-tables.Second Base Tables
+p.content-div For basic styling-light padding and only horizontal dividers-add the base class
+   span.btn-color .table
+   |  to any
+   span.btn-color < table >
+   | .   It may seem super redundant,but given hte widespread use of tables for other plugins like calendars and date pickers,we've opted to isolate our custom table styles.
+
+.bs-example
+   table.table
+      thead
+         tr
+            th Name
+               i.fa.fa-sort
+            th Position
+               i.fa.fa-sort-asc
+            th Office
+               i.fa.fa-sort-desc
+            th Age
+               i.fa.fa-sort
+            th Date
+               i.fa.fa-sort
+      tbody
+         tr
+            td Mark
+            td 7579 Santa Forest
+            td Jordaneville
+            td 21
+            td 2013/05/13
+         tr
+            td Jacob
+            td 46406 Powlowski
+            td North Elwynfurt
+            td 25
+            td 2015/03/18
+         tr
+            td Larry
+            td 6440 Moen Loop
+            td Lake Charity
+            td 32
+            td 2014/02/26
+         tr
+            td Torrey
+            td 1568 Richmond
+            td Port Lempi
+            td 25
+            td 2015/04/28
+         tr
+            td Thea
+            td 1995 Richie Neck
+            td Rolfsonborough
+            td 27
+            td 2013/05/30
+         tr
+            td Terrance.Borer
+            td 44727 Hara Union
+            td Beckerhaven
+            td 30
+            td 2013/11/27
+         tr
+            td Shanel
+            td 1995 Richie Neck
+            td Beckerhaven
+            td 22
+            td 2014/09/27
+         tr
+            td Sammie
+            td 1995 Richie Neck
+            td Beckerhaven
+            td 36
+            td 2015/01/27
+.lineNum
+   pre
+      p 1
+      p 2
+      p 3
+   .code
+      pre
+         p
+         span.c <!-- Table -->
+         span.nt <
+         span.nt table
+         span.na  class=
+         span.s "table"
+         span.nt >
+         p
+         span   ...
+         p
+         span.nt <
+         span /table>
+
+
+h4#tables-details.Second Tables details
+p.content-div Use
+   span.btn-color .detail-title
+   |  to displays detailed information in a table.
+.bs-example
+   table.table.table-sort.table-detail-default
+      thead
+         tr
+            th Name
+               i.fa.fa-sort
+            th Position
+               i.fa.fa-sort-asc
+            th Office
+               i.fa.fa-sort-desc
+            th Age
+               i.fa.fa-sort
+            th Date
+               i.fa.fa-sort
+      tbody
+         tr
+            td Mark
+            td 7579 Santa Forest
+            td Jordaneville
+            td 21
+            td 2013/05/13
+         tr
+           td.is-nopadding(colspan=5)
+                .detail-default
+                  .detail-title details
+                  dl
+                    dt  Name:
+                    dd  Mark
+                    dt  Position:
+                    dd  7579 Santa Forest
+                    dt  Office:
+                    dd  Jordaneville
+                    dt  Age:
+                    dd  21 Jun 2014
+                    dt  Date:
+                    dd  2013.05.13
+.lineNum
+   pre
+      p 1
+      p 2
+      p 3
+      p 4
+      p 5
+      p 6
+      p 7
+      p 8
+      p 9
+      p 10
+      p 11
+      p 12
+   .code
+      pre
+         p
+         span.c <!-- Table -->
+         span.nt <
+         span.nt table
+         span.na  class=
+         span.s "table"
+         span.nt >
+         p
+         span.nt  <
+         span.nt tr
+         span.nt >
+         p
+         span     ...
+         p
+         span.nt  <
+         span.nt /tr>
+         p
+         span.nt  <
+         span.nt td
+         span.na  class=
+         span.s "is-nopadding"
+         span.na  clospan=
+         span.s 5
+         span.nt >
+         p
+         span.nt     <
+         span.nt div
+         span.na class=
+         span.s "detail-default"
+         span.nt >
+         p
+         span.nt        <
+         span.nt div
+         span.na class=
+         span.s "detail-title"
+         span.nt >
+         span details
+         span.nt <
+         span.nt /div>
+         p
+         span.nt        <
+         span.nt dl
+         span.nt >
+         p
+         span           ...
+         p
+         span.nt        <
+         span.nt /dl>
+         p
+         span.nt     <
+         span.nt /div>
+         p
+         span.nt <
+         span /table>
+
