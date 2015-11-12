@@ -4,7 +4,7 @@ html(lang='en')
       title API Document
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1')
-      link(rel='stylesheet', href='output/bower_components/smaless/build/css/main.css')
+      //link(rel='stylesheet', href='output/bower_components/smaless/build/css/main.css')
       link(rel='stylesheet', href='output/scss/index.css')
 
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
@@ -15,98 +15,99 @@ html(lang='en')
                   img(src="output/scss/lib/images/API-IMG.png")
                p.lead Smaless
                p.leader Beautiful and inspiring uses of Bootstrap
-      .container
-         .row
-            .col-md-3#myScrollspy
-               ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
-                  li.active
-                     a(href='#color') Color
+      section
+         .container
+            .row
+               .col-md-3#myScrollspy
+                  ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
+                     li.active
+                        a(href='#color') Color
 
-                  li
-                     a(href='#buttons') Buttons
-                     ul.childHide
-                        li
-                           a(href='#button-color') Button color
-                        li
-                           a(href='#button-size') Button size
-                        li
-                           a(href='#disabled-state') Disabled state
-                        li
-                           a(href='#dropdowns') Button dropdowns
+                     li
+                        a(href='#buttons') Buttons
+                        ul.childHide
+                           li
+                              a(href='#button-color') Button color
+                           li
+                              a(href='#button-size') Button size
+                           li
+                              a(href='#disabled-state') Disabled state
+                           li
+                              a(href='#dropdowns') Button dropdowns
 
-                  li
-                     a(href='#button-dropdowns') Button dropdowns
-                     ul.childHide
-                        li
-                           a(href="#dropdown-color") Button dropdown colors
-                        li
-                           a(href="#dropdown-size") Button dropdown size
-                        li
-                           a(href="#disabled-items") Disabled items
-                        li
-                           a(href="#icon-menu-item") Icon menu item
-                        li
-                           a(href="#bages")   Bages in menu item
-                        li
-                           a(href="#split-dropdown") Split button dropdown
-
-
-                  li
-                     a(href='#panels') Panels
-                     ul.childHide
-                        li
-                           a(href="#basic-panels") Basic panels
-                        li
-                           a(href="#panel-heading") Panel with heading
-                        li
-                           a(href="#panel-footer") Panel with footer
-                        li
-                           a(href="#panel-table") With tables
-
-                  li
-                     a(href='#tables') Tables
-                     ul.childHide
-                        li
-                           a(href='#base-tables') Base Tables
-                        li
-                           a(href='#tables-details') Tables details
-
-                  li
-                     a(href="#pagination") Pagination
-                     ul.childHide
-                        li
-                           a(href="#pagination-states") Disabled and active states
-                        li
-                           a(href="#pagination-size") Pagination sizing
+                     li
+                        a(href='#button-dropdowns') Button dropdowns
+                        ul.childHide
+                           li
+                              a(href="#dropdown-color") Button dropdown colors
+                           li
+                              a(href="#dropdown-size") Button dropdown size
+                           li
+                              a(href="#disabled-items") Disabled items
+                           li
+                              a(href="#icon-menu-item") Icon menu item
+                           li
+                              a(href="#bages")   Bages in menu item
+                           li
+                              a(href="#split-dropdown") Split button dropdown
 
 
+                     li
+                        a(href='#panels') Panels
+                        ul.childHide
+                           li
+                              a(href="#basic-panels") Basic panels
+                           li
+                              a(href="#panel-heading") Panel with heading
+                           li
+                              a(href="#panel-footer") Panel with footer
+                           li
+                              a(href="#panel-table") With tables
 
-                  div.modal-footer
-                     p
-                        span © Made by Trantect team
-                     p
-                        a(href='#') Back to top
-                     p
-                        a(href='https://github.com/emily123/smaless')
-                           img.gh-ico(src="output/scss/lib/images/download.png")
-            .col-md-9
-               #color
-                  include docSrc/color
+                     li
+                        a(href='#tables') Tables
+                        ul.childHide
+                           li
+                              a(href='#base-tables') Base Tables
+                           li
+                              a(href='#tables-details') Tables details
 
-               #buttons
-                  include docSrc/button
+                     li
+                        a(href="#pagination") Pagination
+                        ul.childHide
+                           li
+                              a(href="#pagination-states") Disabled and active states
+                           li
+                              a(href="#pagination-size") Pagination sizing
 
-               #button-dropdowns
-                  include docSrc/button dropdowns
 
-               #panels
-                  include docSrc/panels
 
-               #tables
-                  include docSrc/tables
+                     div.modal-footer
+                        p
+                           span © Made by Trantect team
+                        p
+                           a(href='#') Back to top
+                        p
+                           a(href='https://github.com/emily123/smaless')
+                              img.gh-ico(src="output/scss/lib/images/download.png")
+               .col-md-9
+                  #color
+                     include docSrc/color
 
-               #pagination
-                  include docSrc/pagination
+                  #buttons
+                     include docSrc/button
+
+                  #button-dropdowns
+                     include docSrc/button dropdowns
+
+                  #panels
+                     include docSrc/panels
+
+                  #tables
+                     include docSrc/tables
+
+                  #pagination
+                     include docSrc/pagination
 
 
 

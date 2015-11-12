@@ -37,8 +37,8 @@
     padding-left: 18px;
 
     &:hover , &:focus {
-      border-left: 1px solid $brand;
-      padding-left: 19px;
+      border-left: 2px solid $brand;
+      padding-left: 18px;
     }
   }
 }
@@ -82,16 +82,16 @@
   }
 }
 
-@media (min-width: 1200px){
-  #myScrollspy{
-    width: 220px;
-  }
-}
-@media (min-width: 768px){
-  #myScrollspy {
-    padding-right: 20px;
-  }
-}
+//@media (min-width: 1200px){
+//  #myScrollspy{
+//    width: 220px;
+//  }
+//}
+//@media (min-width: 768px){
+//  #myScrollspy {
+//    padding-right: 20px;
+//  }
+//}
 
 .modal-footer {
   padding-top: 15px;
