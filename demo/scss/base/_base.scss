@@ -56,3 +56,11 @@ p {
   color: $base-light;
   margin-bottom: 10px;
 }
+ul ,ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+}

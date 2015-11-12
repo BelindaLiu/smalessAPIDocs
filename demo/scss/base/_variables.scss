@@ -97,12 +97,20 @@ $base-lightest:         #f5f5f6;//transparency 95%
 //Link color
 $brand:             #5d95ff;
 
+
 //Code color
 $code-red-dark:           #c44742;//80% black
 $code-red:                #f55952;
 $code-red-white:          #feefee;//10% White
 $code-blue:               #47b2fa;
 $code-purple:             #6d60b1;
+
+//=== Shared nav styles
+$nav-link-padding:                          10px 15px !default;
+$nav-link-hover-bg:                         ($color-black, 93.5%) !default;
+
+$nav-disabled-link-color:                   ($color-black, 46.7%) !default;
+$nav-disabled-link-hover-color:             ($color-black, 46.7%) !default;
 
 $border-line-color:#e8e8e8;
 $border-top: 40px;
