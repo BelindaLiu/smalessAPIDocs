@@ -31,14 +31,14 @@
 .nav {
   display: block;
   > .active >a {
-    border-left: 2px solid $brand-primary;
+    border-left: 2px solid $brand;
     font-weight: 700 !important;
-    color: $brand-primary;
-    padding-left: 12px;
+    color: $brand;
+    padding-left: 18px;
 
     &:hover , &:focus {
-      border-left: 1px solid $brand-primary;
-      padding-left: 12px;
+      border-left: 1px solid $brand;
+      padding-left: 19px;
     }
   }
 }
@@ -46,50 +46,42 @@
 .pills {
   > li > a {
     color: $text-color;
-    margin-bottom: 3px;
-    padding: 2px 2px 2px 14px;
+    padding: 4px 20px;
     &:hover , &:focus {
-      border-left: 1px solid $brand-primary;
+      border-left: 1px solid $brand;
       color: $brand-primary;
-      padding-left: 13px;
+      padding-left: 19px;
     }
   }
 }
 
 .childHide{
   list-style: none;
-  padding-bottom: 10px;
   padding-left: 0px !important;
   display: none;
   >.active>a{
-    border-left: 2px solid $brand-primary;
-    color: $brand-primary;
-    padding-left: 26px;
+    border-left: 2px solid $brand;
+    color: $brand;
+    padding-left: 28px;
 
     &:hover , &:focus {
-      border-left: 1px solid $brand-primary;
-      padding-left: 26px;
+      border-left: 2px solid $brand;
+      padding-left: 28px;
     }
   }
   > li >a{
     display: block;
-    padding-left: 28px;
+    padding: 4px 30px;
     color: $text-color;
     font-weight: 500 !important;
     &:hover , &:focus {
-      border-left: 1px solid $brand-primary;
+      border-left: 1px solid $brand;
       color: $brand-primary;
-      padding-left: 27px;
+      padding-left: 29px;
     }
   }
 }
 
-@media (min-width: 992px){
-  #myScrollspy{
-    position: fixed;
-    top: 20px;
-  }
-}
 @media (min-width: 1200px){
   #myScrollspy{
     width: 220px;
@@ -107,15 +99,28 @@
   margin-top: 30px;
   > p > a {
     color: $text-color;
-    //padding-left: 14px;
     &:hover , &:focus {
       color: $brand-primary;
-      padding-left: 14px;
     }
   }
 }
-.affix {
-  position: fixed;
+
+@media (min-width: 1200px) {
+  .affix {
+    width: 220px;
+    top: 20px;
+    position: fixed;
+  }
+}
+@media (min-width: 992px){
+  .bs-docs-sidebar.affix {
+    position: fixed;
+    top: 20px;
+  }
+}
+.affix-top {
+  position: relative;
+  top: 50px;
 }
 
 .line {
@@ -127,4 +132,9 @@
 h4.Second {
   margin-top: 25px;
   margin-bottom: 10px;
+}
+
+.gh-ico {
+  width: 20px;
+  height: 20px;
 }

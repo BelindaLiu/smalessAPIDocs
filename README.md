@@ -1,4 +1,16 @@
-# smalessAPIDoc
+# smaless
+
+### Step 1
 ```
-  This project is used to show usage of `smaless` API in html.
+git clone git@github.com:emily123/smaless.git
+cd smaless
+```
+### Step 2
+```
+make env
+```
+
+### Step 3
+```
+make build
 ```

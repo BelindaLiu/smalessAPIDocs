@@ -1,0 +1,19 @@
+@import "../base/variables";
+header {
+  background-color: rgba(25, 30, 33, 0.96);
+  > .container > .row {
+    height: 300px;
+    > .lead {
+      text-align: center;
+      font-size: 20px;
+      color: $brand;
+      font-weight: bold;
+    }
+    > .leader {
+      text-align: center;
+      font-size: 18px;
+      color: $brand;
+      opacity: 0.5;
+    }
+  }
+}

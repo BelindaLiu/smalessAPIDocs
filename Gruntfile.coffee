@@ -49,6 +49,11 @@ module.exports = (grunt)->
         src: ['bower_components/**/*']
         dest: 'output'
         expand: true
+      build:
+        cwd: 'demo'
+        src: 'scss/lib/images/*'
+        dest: 'output'
+        expand: true
   
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
@@ -59,5 +64,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:packages"]
+  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:build","copy:packages"]
   grunt.registerTask "default", ["clean:demo", "build"]

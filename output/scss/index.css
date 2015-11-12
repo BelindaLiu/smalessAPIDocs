@@ -29,49 +29,43 @@
 .nav {
   display: block; }
   .nav > .active > a {
-    border-left: 2px solid #0189ff;
+    border-left: 2px solid #5d95ff;
     font-weight: 700 !important;
-    color: #0189ff;
-    padding-left: 12px; }
+    color: #5d95ff;
+    padding-left: 18px; }
     .nav > .active > a:hover, .nav > .active > a:focus {
-      border-left: 1px solid #0189ff;
-      padding-left: 12px; }
+      border-left: 1px solid #5d95ff;
+      padding-left: 19px; }
 
 .pills > li > a {
   color: #3e4451;
-  margin-bottom: 3px;
-  padding: 2px 2px 2px 14px; }
+  padding: 4px 20px; }
   .pills > li > a:hover, .pills > li > a:focus {
-    border-left: 1px solid #0189ff;
+    border-left: 1px solid #5d95ff;
     color: #0189ff;
-    padding-left: 13px; }
+    padding-left: 19px; }
 
 .childHide {
   list-style: none;
-  padding-bottom: 10px;
   padding-left: 0px !important;
   display: none; }
   .childHide > .active > a {
-    border-left: 2px solid #0189ff;
-    color: #0189ff;
-    padding-left: 26px; }
+    border-left: 2px solid #5d95ff;
+    color: #5d95ff;
+    padding-left: 28px; }
     .childHide > .active > a:hover, .childHide > .active > a:focus {
-      border-left: 1px solid #0189ff;
-      padding-left: 26px; }
+      border-left: 2px solid #5d95ff;
+      padding-left: 28px; }
   .childHide > li > a {
     display: block;
-    padding-left: 28px;
+    padding: 4px 30px;
     color: #3e4451;
     font-weight: 500 !important; }
     .childHide > li > a:hover, .childHide > li > a:focus {
-      border-left: 1px solid #0189ff;
+      border-left: 1px solid #5d95ff;
       color: #0189ff;
-      padding-left: 27px; }
+      padding-left: 29px; }
 
-@media (min-width: 992px) {
-  #myScrollspy {
-    position: fixed;
-    top: 20px; } }
 @media (min-width: 1200px) {
   #myScrollspy {
     width: 220px; } }
@@ -85,11 +79,20 @@
   .modal-footer > p > a {
     color: #3e4451; }
     .modal-footer > p > a:hover, .modal-footer > p > a:focus {
-      color: #0189ff;
-      padding-left: 14px; }
+      color: #0189ff; }
 
-.affix {
-  position: fixed; }
+@media (min-width: 1200px) {
+  .affix {
+    width: 220px;
+    top: 20px;
+    position: fixed; } }
+@media (min-width: 992px) {
+  .bs-docs-sidebar.affix {
+    position: fixed;
+    top: 20px; } }
+.affix-top {
+  position: relative;
+  top: 50px; }
 
 .line {
   border-bottom: 1px solid #e1e2e3;
@@ -100,12 +103,53 @@ h4.Second {
   margin-top: 25px;
   margin-bottom: 10px; }
 
+.gh-ico {
+  width: 20px;
+  height: 20px; }
+
 /*----------------------------*/
 /*----------------------------*/
 /* Mixing Color varriable for creating both light and dark colors */
 /* Lighter colors */
 /* Darker colors */
 /* Generating Menu font color */
+.c {
+  color: #6d60b1; }
+
+.nt {
+  color: #47b2fa; }
+
+.s {
+  color: #f55952; }
+
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+.smaicon {
+  padding: 10px 557px; }
+  .smaicon > img {
+    margin-top: 50px; }
+
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+p.content-bg {
+  color: #777;
+  font-size: 13px; }
+
+.content-div {
+  color: #777; }
+
+.btn-color {
+  color: #f55952;
+  padding-left: 2px; }
+
 /*----------------------------*/
 /*----------------------------*/
 /* Mixing Color varriable for creating both light and dark colors */
@@ -262,24 +306,18 @@ h4.Second {
   padding-left: 10px;
   height: 60px; }
 
-p.content-bg {
-  color: #777;
-  font-size: 13px; }
-
-.content-div {
-  color: #777;
-  margin-top: 10px; }
-  .content-div > .btn-color {
-    color: #fa515b;
-    background-color: #fafafa;
-    padding-left: 2px; }
-
 .btn {
   margin-top: 15px; }
 
-.side {
-  border-left: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8; }
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
 
 /*----------------------------*/
 /*----------------------------*/
@@ -612,6 +650,11 @@ p.content-bg {
   color: #777;
   font-size: 13px; }
 
+.bs-example > nav {
+  height: 75px; }
+  .bs-example > nav > .pagination {
+    float: left; }
+
 .bs-example {
   position: relative;
   padding: 45px 15px 15px;
@@ -653,13 +696,18 @@ p.content-bg {
   border: 1px solid #e1e1e8;
   border-radius: 4px;
   border-left-style: 1; }
-  .highlight > pre > dl > dt {
+  .highlight > pre {
+    float: left;
+    border-right: 1px solid #e8e8e8;
+    padding-bottom: 21px;
+    width: 25px;
+    margin: 0;
+    padding-top: 20px; }
+    .highlight > pre > p {
+      margin: 6.5px 0 10px 0; }
+  .highlight > .code {
     text-align: left;
-    width: 40px;
-    display: block;
-    border-right: 1px solid #e8e8e8; }
-  .highlight > pre > dl > dd {
-    height: 25px; }
+    padding: 10px 0px 10px 50px; }
 
 .panel {
   margin-bottom: 20px;
@@ -787,49 +835,55 @@ th {
   vertical-align: bottom;
   border-bottom: 2px solid #ddd; }
 
-.lineNum {
-  border-left: 1px solid #e8e8e8;
-  border-bottom: 1px solid #e8e8e8;
-  border-right: 1px solid #e8e8e8;
-  background-color: #f5f5f6;
-  text-align: left;
-  margin-top: -15px;
-  padding: 10px 0;
-  padding-top: 0; }
-  .lineNum > pre {
-    float: left;
-    border-right: 1px solid #e8e8e8;
-    padding-bottom: 21px;
-    width: 50px;
-    margin: 0;
-    padding-top: 20px;
-    text-align: center; }
-    .lineNum > pre > p {
-      margin: 6.5px 0 10px 0; }
-  .lineNum > .code {
-    text-align: left;
-    padding: 10px 0px 10px 100px; }
-
-.caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid \9;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent; }
-
-.btn-color {
-  color: #6a6d74;
-  padding-left: 2px; }
-
 .btn-code {
-  color: #a22fb6;
+  color: #383c45;
   padding-left: 2px; }
 
-.bs-example > nav {
-  height: 75px; }
-  .bs-example > nav > .pagination {
-    float: left; }
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+h1 {
+  padding-top: 20px;
+  padding-bottom: 9px; }
+
+h3 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px; }
+
+h1, h3 {
+  color: #383c45; }
+
+p {
+  color: #6a6d74;
+  margin-bottom: 10px; }
+
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+header {
+  background-color: rgba(25, 30, 33, 0.96); }
+  header > .container > .row {
+    height: 300px; }
+    header > .container > .row > .lead {
+      text-align: center;
+      font-size: 20px;
+      color: #5d95ff;
+      font-weight: bold; }
+    header > .container > .row > .leader {
+      text-align: center;
+      font-size: 18px;
+      color: #5d95ff;
+      opacity: 0.5; }

@@ -1,0 +1,30 @@
+{
+  "name": "smaless",
+  "homepage": "https://github.com/emily123/smaless/tree/master",
+  "authors": [
+    "emily.liu@trantect.com"
+  ],
+  "description": "",
+  "main": "build",
+  "moduleType": [],
+  "license": "MIT",
+  "dependencies": {},
+  "ignore": [
+    "fonts",
+    "src",
+    "demo",
+    "node_modules",
+    "bower_components",
+    "Gruntfile.coffee",
+    "package.json"
+  ],
+  "_release": "c9d3bbfd7b",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c9d3bbfd7b7dd2bb99578e448d74ffabb1036274"
+  },
+  "_source": "git://github.com/emily123/smaless.git",
+  "_target": "*",
+  "_originalSource": "smaless"
+}

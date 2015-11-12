@@ -1,6 +1,6 @@
 h1 Pagination
 .line
-h4#pagination-states.Second Disabled and active states
+h3#pagination-states.Second Disabled and active states
 p.content-bg Links are customizable for different circumstances. Use
    span.btn-color .disabled
    |  for unclickable links and
@@ -25,7 +25,7 @@ p.content-bg Links are customizable for different circumstances. Use
          li
             a(href="#" aria-label="Next")
                span(aria-hidden="true") &#187;
-.lineNum
+.highlight
    pre
       p 1
       p 2
@@ -42,37 +42,58 @@ p.content-bg Links are customizable for different circumstances. Use
    .code
       pre
          p
-         span  nav
+         span.c  nav
          p
-         span     ul
-         span.btn-color .pagination
+         span.c     ul
+         span.s .pagination
          p
-         span        li
-         span.btn-color .disabled
+         span.c        li
+         span.s .disabled
          p
-         span           a
-         span (href="#" aria-label="Previous")
+         span.c           a
+         span (
+         span.nt href=
+         span.s "#"
+         span.nt  aria-label=
+         span.s "Previous"
+         span )
          p
-         span           span(aria-hidden="true") &
+         span.c           span
+         span (
+         span.nt aria-hidden=
+         span.s "true"
+         span ) &
          span #171;
          p
-         span        li
-         span.btn-color .active
+         span.c        li
+         span.s .active
          p
-         span           a
-         span (href="#") 1
+         span.c           a
+         span (
+         span.nt href=
+         span.s "#"
+         span ) 1
          p
          span        ...
          p
-         span        li
+         span.c        li
          p
-         span           a
-         span (href="#" aria-label="Next")
+         span.c           a
+         span (
+         span.nt href=
+         span.s "#"
+         span.nt  aria-label=
+         span.s "Next"
+         span )
          p
-         span           span(aria-hidden="true") &
+         span.c           span
+         span (
+         span.nt aria-hidden=
+         span.s "true"
+         span ) &
          span #187;
 
-h4#pagination-size.Second Pagination sizing
+h3#pagination-size.Second Pagination sizing
 p.content-bg Fancy larger or smaller pagination? Add
    span.btn-color .pagination-lg
    |  or
@@ -133,7 +154,7 @@ p.content-bg Fancy larger or smaller pagination? Add
          li
             a(href="#" aria-label="Next")
                span(aria-hidden="true") &#187;
-.lineNum
+.highlight
    pre
       p 1
       p 2
@@ -145,17 +166,20 @@ p.content-bg Fancy larger or smaller pagination? Add
    .code
       pre
          p
-         span  nav
+         span.c  nav
          p
-         span     ul
-         span.btn-color .pagination.pagination-lg ...
+         span.c     ul
+         span.s .pagination.pagination-lg
+         span  ...
          p
-         span  nav
+         span.c  nav
          p
-         span     ul
-         span.btn-color .pagination ...
+         span.c     ul
+         span.s .pagination
+         span  ...
          p
-         span  nav
+         span.c  nav
          p
-         span     ul
-         span.btn-color .pagination.pagination-sm ...
+         span.c     ul
+         span.s .pagination.pagination-sm
+         span  ...
