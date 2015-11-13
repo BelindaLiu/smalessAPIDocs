@@ -39,68 +39,6 @@
 .row:after {
   clear: both; }
 
-//.nav {
-//  margin-bottom: 0;
-//  padding-left: 0; // Override default ul/ol
-//  list-style: none;
-//  @mixin clearfix() {
-//    &:before,
-//    &:after {
-//      content: " "; // 1
-//      display: table; // 2
-//    }
-//    &:after {
-//      clear: both;
-//    }
-//  }
-//
-//  > li {
-//    position: relative;
-//    display: block;
-//    list-style-type: none;
-//    > a {
-//      position: relative;
-//      display: block;
-//      padding: $nav-link-padding;
-//      text-decoration: none;
-//      &:hover,
-//      &:focus {
-//        text-decoration: none;
-//        background-color: $nav-link-hover-bg;
-//      }
-//    }
-//
-//    // Disabled state sets text to gray and nukes hover/tab effects
-//    &.disabled > a {
-//      color: $nav-disabled-link-color;
-//
-//      &:hover,
-//      &:focus {
-//        color: $nav-disabled-link-hover-color;
-//        text-decoration: none;
-//        background-color: transparent;
-//        //        cursor: $cursor-disabled;
-//      }
-//    }
-//  }
-//
-//  // Open dropdowns
-//  .open > a {
-//    &,
-//    &:hover,
-//    &:focus {
-//      background-color: $nav-link-hover-bg;
-//      border-color: $brand;
-//    }
-//  }
-//
-//  // Prevent IE8 from misplacing imgs
-//  //
-//  // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
-//  > li > a > img {
-//    max-width: none;
-//  }
-//}
 .active > ul {
   display: block !important;
   margin-bottom: 0px;
@@ -195,7 +133,7 @@
   }
   .col-md-3 {
     width: 20%;
-    height: 250px;
+    //height: 250px;
   }
   .col-md-9 {
     float: right;

@@ -1,6 +1,7 @@
 @import "../base/variables";
 header {
   background-color: rgba(25, 30, 33, 0.96);
+  margin-bottom: 50px;
   > .container > .row {
     height: 300px;
     > .lead {

@@ -1,70 +1,4 @@
 @import "../base/variables";
-//.active > ul {
-//  display: block !important;
-//}
-//.nav {
-//  display: block;
-//  > .active >a {
-//    border-left: 2px solid $brand;
-//    font-weight: 700 !important;
-//    color: $brand;
-//    padding-left: 18px;
-//
-//    &:hover , &:focus {
-//      border-left: 2px solid $brand;
-//      padding-left: 18px;
-//    }
-//  }
-//}
-//
-//.pills {
-//  > li {
-//    position: relative;
-//    display: block;
-//    text-decoration: none;
-//    > a {
-//      position: relative;
-//      display: block;
-//      color: $text-color;
-//      padding: 4px 20px;
-//      text-decoration: none;
-//      &:hover, &:focus {
-//        border-left: 1px solid $brand;
-//        color: $brand-primary;
-//        padding-left: 19px;
-//      }
-//    }
-//  }
-//}
-//
-//.childHide{
-//  list-style: none;
-//  padding-left: 0px !important;
-//  display: none;
-//  >.active>a{
-//    border-left: 2px solid $brand;
-//    color: $brand;
-//    padding-left: 28px;
-//
-//    &:hover , &:focus {
-//      border-left: 2px solid $brand;
-//      padding-left: 28px;
-//    }
-//  }
-//  > li >a{
-//    display: block;
-//    padding: 4px 30px;
-//    color: $text-color;
-//    font-weight: 500 !important;
-//    &:hover , &:focus {
-//      border-left: 1px solid $brand;
-//      color: $brand-primary;
-//      padding-left: 29px;
-//    }
-//  }
-//}
-
-
 .modal-footer {
   padding-top: 15px;
   border-top: 2px solid #e8e8e8;
@@ -92,7 +26,6 @@
 }
 .affix-top {
   position: relative;
-  top: 50px;
 }
 
 .line {
