@@ -9,19 +9,16 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
 
-    clean:
-      demo: ['']
-
-    concat:
-      dist:
-        src: [
-         'demo/scss/*.scss'
-        ]
-        dest: 'demo/scss/main.scss'
+#    concat:
+#      dist:
+#        src: [
+#         'demo/scss/*.scss'
+#        ]
+#        dest: 'demo/scss/main.scss'
     sass:
-      dist:
+      demo:
         files:
-          'main.css':'demo/scss/main.scss'
+          'main.css':'src/scss/main.scss'
 
     coffee:
       demo:
@@ -50,13 +47,9 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
+#  grunt.loadNpmTasks 'grunt-contrib-concat'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["build"]
-  grunt.loadNpmTasks 'grunt-contrib-concat'
-
-  grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "build", ["concat", "sass", "coffee:demo", "jade:demo"]
-  grunt.registerTask "default", ["clean:demo", "build"]
 
