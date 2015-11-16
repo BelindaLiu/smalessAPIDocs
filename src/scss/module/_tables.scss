@@ -1,0 +1,55 @@
+@import "../mixins/variables";
+.table {
+  width: 100%;
+  max-width: 100%;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 8px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.table > thead > tr > th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #ddd;
+}
+.table > tbody > tr:nth-of-type(odd) {
+  background-color: #fafbfc;
+}
+.table > thead:first-child > tr:first-child > th {
+  border-top: 0;
+}
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.table-detail-default .detail-default {
+  padding: 8px;
+  background-color: #fcfcfc;
+}
+.is-nopadding {
+  padding: 0 !important;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-unsorted:after, .fa-sort:after {
+  content: "";
+}
+.fa-sort-up:after, .fa-sort-asc:after {
+  content: "";
+}
+.fa-sort-down:after, .fa-sort-desc:after {
+  content: "";
+}

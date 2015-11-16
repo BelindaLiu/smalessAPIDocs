@@ -3,31 +3,26 @@ module.exports = (grunt)->
 
     watch:
       scripts:
-        files: ['demo/**/*.jade','demo/scss/*.scss']
+        files: ['src/**/*.jade','src/scss/*.scss']
         tasks: ['default']
       options:
         spawn: false
         debounceDelay: 300
-    clean:
-      demo: ['output']
+
     sass:
       demo:
-        files: [
-          {
-            expand: true,
-            cwd: 'demo',
-            src: ['scss/*.scss']
-            dest: 'output',
-            ext: '.css'
-          }
-        ]
+        files:
+          "main.css": "src/scss/main.scss"
+
     coffee:
       demo:
-        expand: true,
-        cwd: 'demo/coffee',
-        src: ['*.coffee'],
-        dest: 'output/js',
-        ext: '.js'
+        files:
+          "main.js": "src/coffee/forDoc.coffee"
+#        expand: true,
+#        cwd: 'src/coffee',
+#        src: ['*.coffee'],
+#        dest: '',
+#        ext: 'main.js'
 
     jade:
       demo:
@@ -36,7 +31,7 @@ module.exports = (grunt)->
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
         files:
-          "index.html": "demo/index.jade"
+          "index.html": "src/index.jade"
 
     shell:
       installSASS:
@@ -44,25 +39,14 @@ module.exports = (grunt)->
       installJADE:
         command: 'sudo npm install jade -g'
 
-    copy:
-      packages:
-        src: ['bower_components/**/*']
-        dest: 'output'
-        expand: true
-      build:
-        cwd: 'demo'
-        src: 'scss/lib/images/*'
-        dest: 'output'
-        expand: true
-  
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-  grunt.loadNpmTasks 'grunt-contrib-copy'
+
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo", "copy:build","copy:packages"]
-  grunt.registerTask "default", ["clean:demo", "build"]
+  grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo"]
+  grunt.registerTask "default", ["build"]
