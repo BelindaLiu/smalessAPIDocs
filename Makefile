@@ -9,5 +9,7 @@ env:
 # you can modify Gruntfile.coffee to change tasks
 build:
 	# clear old output files
+	rm -f src/main.scss
+	rm -f main.css
 	rm -rf output
 	grunt
