@@ -1,7 +1,7 @@
 {
   "name": "smaless",
-  "version": "0.0.0",
-  "homepage": "https://github.com/emily123/smaless/tree/master",
+  "version": "0.1.1",
+  "homepage": "http://emily123.github.io/smaless/",
   "authors": [
     "emily.liu@trantect.com"
   ],
@@ -12,9 +12,9 @@
   "dependencies": {
   },
   "ignore": [
-    "fonts",
+    "test",
     "src",
-    "demo",
+    "Makefile",
     "node_modules",
     "bower_components",
     "Gruntfile.coffee",

@@ -26,7 +26,7 @@
             │   ├── main.css
             ├── images/
             │   └── main.png
-            └── fonts/
+            └── font/
                 ├── FontAwesome.otf
                 ├── fontawesome-webfont.eot
                 ├── fontawesome-webfont.svg
