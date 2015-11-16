@@ -1,4 +1,4 @@
-# The project `smalessAPIDocs` is used to show usage of `smaless` API in html.
+## The project `smalessAPIDocs` is used to show usage of `smaless` API in html.
 
 # smaless
 
