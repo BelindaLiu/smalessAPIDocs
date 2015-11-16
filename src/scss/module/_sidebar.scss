@@ -1,7 +1,4 @@
 @import "../mixins/variables";
-#myScrollspy > ul {
-  margin-top: 38.760px;
-}
 .nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
@@ -101,6 +98,7 @@
 }
 .affix-top {
   position: relative;
+  margin-top: 38.760px;
 }
 
 @media (max-width: 767px) {
