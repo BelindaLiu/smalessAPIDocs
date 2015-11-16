@@ -1,4 +1,4 @@
-@import "../base/variables";
+@import "../mixins/variables";
 @mixin disable($leftcolor){
   border-left: $border-left solid $leftcolor;
   border-top: 1px solid $border-line-color;

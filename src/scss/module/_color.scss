@@ -1,4 +1,4 @@
-@import "../base/variables";
+@import "../mixins/variables";
 @mixin colorModel($topColor) {
   border-top: $border-top solid $topColor;
   height: $border-top + -10px;

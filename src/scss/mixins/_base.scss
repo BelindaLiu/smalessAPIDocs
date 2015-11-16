@@ -1,0 +1,94 @@
+@import "variables";
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #3e4451;
+  margin: 0;
+  font-family: "Lucida Grande", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Noto Sans CJK SC", "Heiti SC", "Microsoft YaHei", "WenQuanYi Microhei", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  @media (min-width: 992px){
+  .container {
+    width: 970px;
+  }
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+h1 {
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+h3 {
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+h1,h3 {
+  color: $base;
+}
+h5 {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  color: $base-light;
+  margin: 0 0 10px;
+}
+
+table {
+  background-color: transparent;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-color: grey;
+}
+th {
+  text-align: left;
+}
+ul ,ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+}
+dl {
+  margin: 0;
+  padding: 8px;
+}
+dt {
+  float: left;
+  text-align: right;
+  margin-right: 8px;
+  width: 100px;
+}
+dt, dd {
+  line-height: 1.42857;
+}

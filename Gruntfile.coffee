@@ -8,20 +8,16 @@ module.exports = (grunt)->
       options:
         spawn: false
         debounceDelay: 300
-    clean:
-      demo: ['output']
 
     sass:
-      dist:
+      demo:
         files:
           'main.css':'src/scss/main.scss'
+
     coffee:
       demo:
-        expand: true,
-        cwd: 'src/coffee',
-        src: ['*.coffee'],
-        dest: 'output/js',
-        ext: '.js'
+        files:
+          "main.js": "src/coffee/forDoc.coffee"
 
     jade:
       demo:
@@ -50,6 +46,7 @@ module.exports = (grunt)->
         src: 'scss/lib/images/*'
         dest: 'output'
         expand: true
+
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
@@ -60,4 +57,4 @@ module.exports = (grunt)->
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "build", ["shell:concatScss", "sass", "coffee:demo", "jade:demo", "copy:build","copy:packages"]
-  grunt.registerTask "default", ["clean:demo", "build"]
+  grunt.registerTask "default", ["build"]

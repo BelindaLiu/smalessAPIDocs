@@ -4,7 +4,7 @@ html(lang='en')
       title API Document
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1')
-      link(rel='stylesheet', href='output/bower_components/smaless/build/css/main.css')
+      link(rel='stylesheet', href='bower_components/smaless/build/css/main.css')
       link(rel='stylesheet', href='main.css')
 
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
@@ -12,7 +12,7 @@ html(lang='en')
          .container
             .row
                .smaicon
-                  img(src="output/scss/lib/images/API-IMG.png")
+                  img(src="src/lib/images/API-IMG.png")
                p.lead Smaless
                p.leader Beautiful and inspiring uses of Bootstrap
       .container
@@ -66,7 +66,7 @@ html(lang='en')
                      a(href='#tables') Tables
                      ul.childHide
                         li
-                           a(href='#base-tables') Base Tables
+                           a(href='#mixins-tables') Base Tables
                         li
                            a(href='#tables-details') Tables details
 
@@ -85,28 +85,30 @@ html(lang='en')
                         a(href='#') Back to top
                      p
                         a(href='https://github.com/emily123/smaless')
-                           img.gh-ico(src="output/scss/lib/images/download.png")
+                           img.gh-ico(src="src/lib/images/download.png")
             .col-md-9
                #color
-                  include docSrc/color
+                  include jade/color
 
                #buttons
-                  include docSrc/button
+                  include jade/button
 
                #button-dropdowns
-                  include docSrc/button dropdowns
+                  include jade/button dropdowns
 
                #panels
-                  include docSrc/panels
+                  include jade/panels
 
                #tables
-                  include docSrc/tables
+                  include jade/tables
 
                #pagination
-                  include docSrc/pagination
+                  include jade/pagination
 
+      footer.bs-docs-footer
+         .container
+            p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
 
-
-      script(type='text/javascript' src='output/bower_components/jquery/dist/jquery.js')
-      script(type='text/javascript' src='output/bower_components/bootstrap/dist/js/bootstrap.js')
-      script(type='text/javascript' src='output/js/forDemo.js')
+      script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
+      script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')
+      script(type='text/javascript' src='main.js')
