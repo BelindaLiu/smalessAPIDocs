@@ -9,20 +9,25 @@ module.exports = (grunt)->
         spawn: false
         debounceDelay: 300
 
+    clean:
+      demo: ['']
+
+    concat:
+      dist:
+        src: [
+         'demo/scss/*.scss'
+        ]
+        dest: 'demo/scss/main.scss'
     sass:
-      demo:
+      dist:
         files:
-          "main.css": "src/scss/main.scss"
+          'main.css':'demo/scss/main.scss'
 
     coffee:
       demo:
         files:
           "main.js": "src/coffee/forDoc.coffee"
-#        expand: true,
-#        cwd: 'src/coffee',
-#        src: ['*.coffee'],
-#        dest: '',
-#        ext: 'main.js'
+
 
     jade:
       demo:
@@ -39,6 +44,7 @@ module.exports = (grunt)->
       installJADE:
         command: 'sudo npm install jade -g'
 
+
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
@@ -47,6 +53,13 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
 
 
+
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["build"]
+  grunt.loadNpmTasks 'grunt-contrib-concat'
+
+  grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
+  grunt.registerTask "build", ["concat", "sass", "coffee:demo", "jade:demo"]
+  grunt.registerTask "default", ["clean:demo", "build"]
+
