@@ -44,15 +44,12 @@ module.exports = (grunt)->
       installJADE:
         command: 'sudo npm install jade -g'
 
-
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
   grunt.loadNpmTasks 'grunt-contrib-watch'
   grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
-
-
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "build", ["sass:demo", "coffee:demo", "jade:demo"]
