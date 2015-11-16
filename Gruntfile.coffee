@@ -36,17 +36,6 @@ module.exports = (grunt)->
       concatScss:
         command: 'node concatSass.js'
 
-    copy:
-      packages:
-        src: ['bower_components/**/*']
-        dest: 'output'
-        expand: true
-      build:
-        cwd: 'src'
-        src: 'scss/lib/images/*'
-        dest: 'output'
-        expand: true
-
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-shell'
   grunt.loadNpmTasks 'grunt-contrib-sass'
@@ -56,5 +45,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
   grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
-  grunt.registerTask "build", ["shell:concatScss", "sass", "coffee:demo", "jade:demo", "copy:build","copy:packages"]
+  grunt.registerTask "build", ["shell:concatScss", "sass", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["build"]
