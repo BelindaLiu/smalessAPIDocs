@@ -1,3 +1,4 @@
 content {
-  margin-left: $sidebar-margin+$sidebar-width;
+  margin-left: $sidebar-margin+$sidebar-width+50px;
+  width: $sidebar-width*4;
 }
