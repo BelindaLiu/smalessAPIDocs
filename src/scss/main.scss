@@ -1,10 +1,10 @@
 @import "base.scss";
 @import "mixin.scss";
 @import "variables.scss";
+@import "module/_explain.scss";
+@import "module/_grid.scss";
+@import "module/_nav.scss";
 @import "layout/_content.scss";
 @import "layout/_footer.scss";
 @import "layout/_header.scss";
-@import "layout/_sidebar.scss";
-@import "module/_explain.scss";
-@import "module/_grid.scss";
-@import "module/_nav.scss"
+@import "layout/_sidebar.scss"
