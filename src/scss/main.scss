@@ -1,5 +1,7 @@
 @import "base.scss";
 @import "variables.scss";
+@import "layout/_footer.scss";
+@import "layout/_header.scss";
 @import "mixins/_mixin.scss";
 @import "module/_buttons.scss";
 @import "module/_code.scss";
@@ -10,6 +12,4 @@
 @import "module/_pagination.scss";
 @import "module/_panels.scss";
 @import "module/_sidebar.scss";
-@import "module/_tables.scss";
-@import "layout/_footer.scss";
-@import "layout/_header.scss"
+@import "module/_tables.scss"

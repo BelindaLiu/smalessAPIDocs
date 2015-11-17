@@ -80,6 +80,10 @@
     &:hover , &:focus {
       color: $brand-primary;
     }
+    > .gh-ico {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -111,18 +115,5 @@
     display: none !important;
   }
 }
-.line {
-  border-bottom: 1px solid $base-lighter;
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
 
-h4.Second {
-  margin-top: 25px;
-  margin-bottom: 10px;
-}
 
-.gh-ico {
-  width: 20px;
-  height: 20px;
-}

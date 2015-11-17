@@ -1,9 +1,9 @@
-/*----------------------------*/
-//Variables
-/*----------------------------*/
+/**----------------------------*/
+///Variables
+/**----------------------------*/
 
-//== Base Color
-// --------------------------------------------------
+/// Base Color
+/// --------------------------------------------------
 $gray-base:              #282C34 !default;
 $gray-darker:            lighten($gray-base, 10%) !default;
 $gray-dark:              lighten($gray-base, 45%) !default;
@@ -22,14 +22,14 @@ $brand-danger:      #f55753 !default;
 $brand-info:        #33c5df !default;
 $brand-menu:        $gray-base !default;
 
-/* Mixing Color varriable for creating both light and dark colors */
+/** Mixing Color varriable for creating both light and dark colors */
 $mix-percentage-dark:      92% !default;
 $mix-percentage-darker:    75% !default;
 $mix-percentage-light:     80% !default;
 $mix-percentage-lighter:   60% !default;
 $mix-percentage-lightest:  20% !default;
 
-/* Lighter colors */
+/** Lighter colors */
 $color-success-light:      mix($brand-success, $color-white, $mix-percentage-light) !default;
 $color-success-lighter:    mix($brand-success, $color-white, $mix-percentage-lighter) !default;
 $color-success-lightest:   mix($brand-success, $color-white, $mix-percentage-lightest) !default;
@@ -54,7 +54,7 @@ $color-info-light:         mix($brand-info, $color-white, $mix-percentage-light)
 $color-info-lighter:       mix($brand-info, $color-white, $mix-percentage-lighter) !default;
 $color-info-lightest:      mix($brand-info, $color-white, $mix-percentage-lightest) !default;
 
-/* Darker colors */
+/** Darker colors */
 $color-success-dark:       mix($brand-success, $color-black, $mix-percentage-dark) !default;
 $color-success-darker:     mix($brand-success, $color-black, $mix-percentage-darker) !default;
 
@@ -76,36 +76,42 @@ $color-info-darker:        mix($brand-info, $color-black, $mix-percentage-darker
 //** Global text color on `<body>`.
 $text-color:            $gray-darker !default;
 
-//== Menu Vars (Sidebar)
-$sidebar-menu-bg :$gray;
-$sidebar-menu-hover: mix($brand-menu, #000, 88%);
-
-/* Generating Menu font color */
-$sidebar-memu-color: $gray-dark;
-
-// Medium screen / desktop
-//** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
-
-//Text color
+///Text color
 $base:                  #383c45;//transparency 0%
 $base-light:            #6a6d74;//transparency 25%
 $base-lighter:          #e1e2e3;//transparency 85%
 $base-lightest:         #f5f5f6;//transparency 95%
 
-//Link color
-$brand:             #5d95ff;
+///== Menu Vars (Sidebar)
+$sidebar-menu-bg :$gray;
+$sidebar-menu-hover: mix($brand-menu, #000, 88%);
+
+/** Generating Menu font color */
+$sidebar-memu-color: $gray-dark;
+
+/// Medium screen / desktop
+//** Deprecated `$screen-md` as of v3.0.1
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+
+/// Border color
+$border-color:            #ddd !default;
 
 
-//Code color
+
+///Link color
+$brand:             #0060b4;
+$brand-light:       #5d95ff;
+
+
+///Code color
 $code-red-dark:           #c44742;//80% black
 $code-red:                #f55952;
 $code-red-white:          #feefee;//10% White
 $code-blue:               #47b2fa;
 $code-purple:             #6d60b1;
 
-//=== Shared nav styles
+///=== Shared nav styles
 $nav-link-padding:                          10px 15px !default;
 $nav-link-hover-bg:                         ($color-black, 93.5%) !default;
 
@@ -115,3 +121,7 @@ $nav-disabled-link-hover-color:             ($color-black, 46.7%) !default;
 $border-line-color:#e8e8e8;
 $border-top: 40px;
 $border-left: 30px;
+
+///Background color
+$background-link-color:         #eeeff2;
+$background-is-color:           #009fe4;
