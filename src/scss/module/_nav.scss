@@ -1,3 +1,7 @@
+.active > ul {
+  display: block !important;
+  margin-bottom: 0px;
+}
 .nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
