@@ -13,95 +13,183 @@ html(lang='en')
             img(src="src/lib/images/API-IMG.png")
          p.smaName Smaless
          p.smaDescribe Beautiful and inspiring uses of Bootstrap
-      .container
-         .row
-            .col-md-3#myScrollspy
-               ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
-                  li.active
-                     a(href='#color') Color
+      sidebar#myScrollspy
+         ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
+            li.active
+               a(href='#color') Color
 
+            li
+               a(href='#buttons') Buttons
+               ul.childHide
                   li
-                     a(href='#buttons') Buttons
-                     ul.childHide
-                        li
-                           a(href='#button-color') Button color
-                        li
-                           a(href='#button-size') Button size
-                        li
-                           a(href='#disabled-state') Disabled state
-                        li
-                           a(href='#dropdowns') Button dropdowns
-
+                     a(href='#button-color') Button color
                   li
-                     a(href='#button-dropdowns') Button dropdowns
-                     ul.childHide
-                        li
-                           a(href="#dropdown-color") Button dropdown colors
-                        li
-                           a(href="#dropdown-size") Button dropdown size
-                        li
-                           a(href="#disabled-items") Disabled items
-                        li
-                           a(href="#icon-menu-item") Icon menu item
-                        li
-                           a(href="#bages")   Bages in menu item
-                        li
-                           a(href="#split-dropdown") Split button dropdown
-
+                     a(href='#button-size') Button size
                   li
-                     a(href='#panels') Panels
-                     ul.childHide
-                        li
-                           a(href="#basic-panels") Basic panels
-                        li
-                           a(href="#panel-heading") Panel with heading
-                        li
-                           a(href="#panel-footer") Panel with footer
-                        li
-                           a(href="#panel-table") With tables
-
+                     a(href='#disabled-state') Disabled state
                   li
-                     a(href='#tables') Tables
-                     ul.childHide
-                        li
-                           a(href='#mixins-tables') Base Tables
-                        li
-                           a(href='#tables-details') Tables details
+                     a(href='#dropdowns') Button dropdowns
 
+            li
+               a(href='#button-dropdowns') Button dropdowns
+               ul.childHide
                   li
-                     a(href="#pagination") Pagination
-                     ul.childHide
-                        li
-                           a(href="#pagination-states") Disabled and active states
-                        li
-                           a(href="#pagination-size") Pagination sizing
+                     a(href="#dropdown-color") Button dropdown colors
+                  li
+                     a(href="#dropdown-size") Button dropdown size
+                  li
+                     a(href="#disabled-items") Disabled items
+                  li
+                     a(href="#icon-menu-item") Icon menu item
+                  li
+                     a(href="#bages")   Bages in menu item
+                  li
+                     a(href="#split-dropdown") Split button dropdown
 
-                  .modal-footer
-                     p
-                        span © Made by Trantect team
-                     p
-                        a(href='#') Back to top
-                     p
-                        a(href='https://github.com/emily123/smaless')
-                           img.gh-ico(src="src/lib/images/download.png")
-            .col-md-9
-               #color
-                  include jade/color
+            li
+               a(href='#panels') Panels
+               ul.childHide
+                  li
+                     a(href="#basic-panels") Basic panels
+                  li
+                     a(href="#panel-heading") Panel with heading
+                  li
+                     a(href="#panel-footer") Panel with footer
+                  li
+                     a(href="#panel-table") With tables
 
-               #buttons
-                  include jade/button
+            li
+               a(href='#tables') Tables
+               ul.childHide
+                  li
+                     a(href='#mixins-tables') Base Tables
+                  li
+                     a(href='#tables-details') Tables details
 
-               #button-dropdowns
-                  include jade/button dropdowns
+            li
+               a(href="#pagination") Pagination
+               ul.childHide
+                  li
+                     a(href="#pagination-states") Disabled and active states
+                  li
+                     a(href="#pagination-size") Pagination sizing
 
-               #panels
-                  include jade/panels
+            .modal-footer
+               p
+                  span © Made by Trantect team
+               p
+                  a(href='#') Back to top
+               p
+                  a(href='https://github.com/emily123/smaless')
+                     img.gh-ico(src="src/lib/images/download.png")
 
-               #tables
-                  include jade/tables
+      content
+         #color
+            include jade/color
 
-               #pagination
-                  include jade/pagination
+         #buttons
+            include jade/button
+
+         #button-dropdowns
+            include jade/button dropdowns
+
+         #panels
+            include jade/panels
+
+         #tables
+            include jade/tables
+
+         #pagination
+            include jade/pagination
+      //.container
+      //   .row
+      //      .col-md-3#myScrollspy
+      //         ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
+      //            li.active
+      //               a(href='#color') Color
+      //
+      //            li
+      //               a(href='#buttons') Buttons
+      //               ul.childHide
+      //                  li
+      //                     a(href='#button-color') Button color
+      //                  li
+      //                     a(href='#button-size') Button size
+      //                  li
+      //                     a(href='#disabled-state') Disabled state
+      //                  li
+      //                     a(href='#dropdowns') Button dropdowns
+      //
+      //            li
+      //               a(href='#button-dropdowns') Button dropdowns
+      //               ul.childHide
+      //                  li
+      //                     a(href="#dropdown-color") Button dropdown colors
+      //                  li
+      //                     a(href="#dropdown-size") Button dropdown size
+      //                  li
+      //                     a(href="#disabled-items") Disabled items
+      //                  li
+      //                     a(href="#icon-menu-item") Icon menu item
+      //                  li
+      //                     a(href="#bages")   Bages in menu item
+      //                  li
+      //                     a(href="#split-dropdown") Split button dropdown
+      //
+      //            li
+      //               a(href='#panels') Panels
+      //               ul.childHide
+      //                  li
+      //                     a(href="#basic-panels") Basic panels
+      //                  li
+      //                     a(href="#panel-heading") Panel with heading
+      //                  li
+      //                     a(href="#panel-footer") Panel with footer
+      //                  li
+      //                     a(href="#panel-table") With tables
+      //
+      //            li
+      //               a(href='#tables') Tables
+      //               ul.childHide
+      //                  li
+      //                     a(href='#mixins-tables') Base Tables
+      //                  li
+      //                     a(href='#tables-details') Tables details
+      //
+      //            li
+      //               a(href="#pagination") Pagination
+      //               ul.childHide
+      //                  li
+      //                     a(href="#pagination-states") Disabled and active states
+      //                  li
+      //                     a(href="#pagination-size") Pagination sizing
+      //
+      //            .modal-footer
+      //               p
+      //                  span © Made by Trantect team
+      //               p
+      //                  a(href='#') Back to top
+      //               p
+      //                  a(href='https://github.com/emily123/smaless')
+      //                     img.gh-ico(src="src/lib/images/download.png")
+      //      .col-md-9
+      //         #color
+      //            include jade/color
+      //
+      //         #buttons
+      //            include jade/button
+      //
+      //         #button-dropdowns
+      //            include jade/button dropdowns
+      //
+      //         #panels
+      //            include jade/panels
+      //
+      //         #tables
+      //            include jade/tables
+      //
+      //         #pagination
+      //            include jade/pagination
 
       footer.bs-docs-footer
          p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
