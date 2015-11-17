@@ -65,17 +65,14 @@
   padding-left: 15px;
 }
 
-@media (min-width: $screen-md-min) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-  .col-md-3 {
-    width: 20%;
-  }
-  .col-md-9 {
-    width: 75%;
-  }
-  .col-md-4{
-    width: 29.5%;
-  }
-}
+//@media (min-width: $screen-md-min) {
+//  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+//    float: left;
+//  }
+//  .col-md-3 {
+//    width: 20%;
+//  }
+//  .col-md-9 {
+//    width: 75%;
+//  }
+//}
