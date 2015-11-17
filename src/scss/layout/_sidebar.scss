@@ -1,5 +1,7 @@
 sidebar {
+  display: block;
   width: $sidebar-width;
   padding: 15px;
   margin-left: $sidebar-margin;
+  position: absolute;
 }
