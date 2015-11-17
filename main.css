@@ -103,39 +103,6 @@ dt, dd {
 /* Lighter colors */
 /* Darker colors */
 /* Generating Menu font color */
-footer {
-  height: 150px;
-  background-color: white;
-  border-top: 1px solid #e5e5e5; }
-  footer > .container > p {
-    margin: 50px 0; }
-
-/*----------------------------*/
-/*----------------------------*/
-/* Mixing Color varriable for creating both light and dark colors */
-/* Lighter colors */
-/* Darker colors */
-/* Generating Menu font color */
-header {
-  background-color: rgba(25, 30, 33, 0.96);
-  margin-bottom: 50px; }
-  header > .container > .row {
-    height: 300px; }
-    header > .container > .row > .smaicon {
-      height: 100px;
-      text-align: center;
-      margin-top: 50px; }
-    header > .container > .row > .lead {
-      text-align: center;
-      font-size: 20px;
-      color: #5d95ff;
-      font-weight: bold; }
-    header > .container > .row > .leader {
-      text-align: center;
-      font-size: 18px;
-      color: #5d95ff;
-      opacity: 0.5; }
-
 /*----------------------------*/
 /*----------------------------*/
 /* Mixing Color varriable for creating both light and dark colors */
@@ -1147,3 +1114,36 @@ h4.Second {
 
 .fa-sort-down:after, .fa-sort-desc:after {
   content: ""; }
+
+footer {
+  height: 150px;
+  background-color: white;
+  border-top: 1px solid #e5e5e5; }
+  footer > .container > p {
+    margin: 50px 0; }
+
+/*----------------------------*/
+/*----------------------------*/
+/* Mixing Color varriable for creating both light and dark colors */
+/* Lighter colors */
+/* Darker colors */
+/* Generating Menu font color */
+header {
+  background-color: rgba(25, 30, 33, 0.96);
+  margin-bottom: 50px; }
+  header > .container > .row {
+    height: 300px; }
+    header > .container > .row > .smaicon {
+      height: 100px;
+      text-align: center;
+      margin-top: 50px; }
+    header > .container > .row > .lead {
+      text-align: center;
+      font-size: 20px;
+      color: #5d95ff;
+      font-weight: bold; }
+    header > .container > .row > .leader {
+      text-align: center;
+      font-size: 18px;
+      color: #5d95ff;
+      opacity: 0.5; }

@@ -12,4 +12,5 @@ build:
 	rm -f src/main.scss
 	rm -f main.css
 	rm -rf output
+	rm -rf sassDoc
 	grunt
