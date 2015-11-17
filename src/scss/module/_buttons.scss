@@ -1,4 +1,3 @@
-@import "../variables";
 .bg-primary-lighter {@include disable($color-primary-lighter)}
 .bg-success-lighter {@include disable($color-success-lighter)}
 .bg-danger-lighter {@include disable($color-danger-lighter)}
@@ -19,10 +18,6 @@
 .bg-warning-dark {@include hover($color-warning-dark)}
 .bg-info-dark {@include hover($color-info-dark)}
 .bg-default-dark {@include hover(#f4f4f4)}
-
-.btn {
-  margin-top: 15px;
-}
 
 .caret {
   display: inline-block;

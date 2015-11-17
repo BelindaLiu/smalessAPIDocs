@@ -8,13 +8,11 @@ html(lang='en')
       link(rel='stylesheet', href='main.css')
 
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
-      header#overview
-         .container
-            .row
-               .smaicon
-                  img(src="src/lib/images/API-IMG.png")
-               p.lead Smaless
-               p.leader Beautiful and inspiring uses of Bootstrap
+      header
+         .smaIcon
+            img(src="src/lib/images/API-IMG.png")
+         p.smaName Smaless
+         p.smaDescribe Beautiful and inspiring uses of Bootstrap
       .container
          .row
             .col-md-3#myScrollspy
@@ -106,8 +104,7 @@ html(lang='en')
                   include jade/pagination
 
       footer.bs-docs-footer
-         .container
-            p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
+         p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')

@@ -1,4 +1,3 @@
-@import "../variables";
 .colorModel-base {@include colorModel($gray-base)}
 .colorModel-primary {@include colorModel($brand-primary)}
 .colorModel-success {@include colorModel($brand-success)}
