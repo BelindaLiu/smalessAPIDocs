@@ -1,10 +1,10 @@
-@import "../variables/variables";
+@import "../variables";
 p.content-bg {
-  color: #777;
+  color: $base-light;
   font-size: 13px;
 }
 .content-div {
-  color: #777;
+  color: $base-light;
 }
 .btn-color {
   color: $code-red;
