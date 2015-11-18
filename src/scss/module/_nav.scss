@@ -1,0 +1,128 @@
+.nav {
+  margin-bottom: 0;
+  padding-left: 0; // Override default ul/ol
+  list-style: none;
+  font-size: $font-size - 4;
+  @mixin clearfix() {
+    &:before,
+    &:after {
+      content: " "; // 1
+      display: table; // 2
+    }
+    &:after {
+      clear: both;
+    }
+  }
+  > .active >a {
+    border-left: $border-left-primary;
+    color: $brand;
+    padding-left: $padding-default+2;
+    font-weight: $font-weight-base;
+    &:hover , &:focus {
+      border-left: $border-left-primary;
+      padding-left: $padding-default+2;
+      color: $brand;
+    }
+  }
+}
+.pills {
+  > li {
+    position: relative;
+    display: block;
+    > a {
+      position: relative;
+      display: block;
+      color: $base;
+      padding: $padding-default - 11 $padding-default+5;
+      text-decoration: none;
+      &:hover, &:focus {
+        border-left: $border-left-default;
+        padding-left: $padding-default+4;
+        color: $brand;
+      }
+    }
+  }
+}
+
+.childHide{
+  list-style: none;
+  padding-left: 0 !important;
+  display: none;
+  >.active>a{
+    border-left: $border-left-primary;
+    color: $brand;
+    padding-left: $padding-default+12;
+    font-weight: $font-weight-base;
+    &:hover , &:focus {
+      border-left: $border-left-primary;
+      padding-left: $padding-default+12;
+      color: $brand;
+    }
+  }
+  > li >a{
+    display: block;
+    padding: $padding-default - 11 0 $padding-default - 11 $padding-default*2;
+    color: $base;
+    text-decoration: none;
+    &:hover , &:focus {
+      border-left: $border-left-default;
+      padding-left: $padding-default+14;
+      color: $brand;
+    }
+  }
+}
+.modal-footer {
+  > .line {
+    margin: $margin-primary*2 0;
+    border-bottom: $border-bottom;
+  }
+  > p {
+    color: $base;
+    > a {
+      color: $base;
+      text-decoration: inherit;
+      &:hover, &:focus {
+        color: $brand;
+      }
+      > .gh-ico {
+        width: $base-top;
+        height: $base-top;
+        opacity: 0.3;
+        &:hover, &:focus {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: $primary-min-width) {
+  .affix {
+    top: $base-top;
+    position: fixed;
+  }
+}
+@media (min-width: $base-min-width){
+  .bs-docs-sidebar.affix {
+    position: fixed;
+    top: $base-top;
+  }
+}
+.affix-top {
+  position: relative;
+  padding-top: $padding-default+10;
+}
+
+@media (max-width: $min-width - 1) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: $min-width) and (max-width: $base-min-width - 1) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+

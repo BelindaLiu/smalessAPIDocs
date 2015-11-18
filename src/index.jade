@@ -4,7 +4,6 @@ html(lang='en')
       title API Document
       meta(charset='utf-8')
       meta(name='viewport', content='width=device-width, initial-scale=1')
-      link(rel='stylesheet', href='bower_components/smaless/build/css/main.css')
       link(rel='stylesheet', href='main.css')
 
    body(data-spy='scroll', data-target='#myScrollspy', data-offset='20')
@@ -77,6 +76,7 @@ html(lang='en')
                            a(href="#pagination-size") Pagination sizing
 
                   .modal-footer
+                     .line
                      p
                         span © Made by Trantect team
                      p
@@ -102,9 +102,6 @@ html(lang='en')
 
                #pagination
                   include jade/pagination
-
-      footer.bs-docs-footer
-         p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')

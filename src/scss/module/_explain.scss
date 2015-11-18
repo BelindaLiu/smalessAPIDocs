@@ -1,18 +1,5 @@
-p.content-bg {
-  color: $base-light;
-  font-size: 13px;
-}
-.content-div {
-  font-size: 13px;
-  color: $base-light;
-  margin-bottom: 10px;
-}
-.btn-color {
-  color: $code-red;
-  padding-left: 2px;
-}
-.line {
-  border-bottom: 1px solid $base-lighter;
-  margin-bottom: 15px;
-  margin-top: 15px;
+.explain {
+  font-size: $font-size - 4;
+  color: $base;
+  margin-bottom: $margin-primary;
 }
