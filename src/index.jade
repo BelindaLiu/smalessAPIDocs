@@ -16,6 +16,23 @@ html(lang='en')
          ul.nav.pills.hidden-xs.hidden-sm(data-spy="affix")
             li.active
                a(href='#color') Color
+               ul.childHide
+                  li
+                     a(href='#base-colors') Base colors
+                  li
+                     a(href='#gray-shades') Gray color shades
+                  li
+                     a(href='#primary-shades') Disabled state
+                  li
+                     a(href='#success-shades') Success color shades
+                  li
+                     a(href='#danger-shades') Danger color shades
+                  li
+                     a(href='#warning-shades') Warning color shades
+                  li
+                     a(href='#info-shades') Info color shades
+                  li
+                     a(href='#menu-shades') Menu color shades
 
             li
                a(href='#buttons') Buttons
@@ -74,6 +91,7 @@ html(lang='en')
                      a(href="#pagination-size") Pagination sizing
 
             .modal-footer
+               .line
                p
                   span © Made by Trantect team
                p
@@ -100,8 +118,6 @@ html(lang='en')
 
          #pagination
             include jade/pagination
-      footer.bs-docs-footer
-         p Copyright © 2015 启明星晨 | Version: 10.013980.4 alpha
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')

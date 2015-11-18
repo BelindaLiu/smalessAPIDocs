@@ -5,6 +5,7 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
+  color: $base-lighter;
   @mixin clearfix() {
     &:before,
     &:after {
@@ -17,13 +18,13 @@
   }
   > .active >a {
     border-left: $border-left-primary;
-    font-weight: $font-weight-primary;
     color: $brand;
-    padding-left: $padding-default+3;
-
+    padding-left: $padding-default+2;
+    font-weight: $font-weight-base;
     &:hover , &:focus {
       border-left: $border-left-primary;
-      padding-left: $padding-default+3;
+      padding-left: $padding-default+2;
+      color: $brand;
     }
   }
 }
@@ -34,13 +35,13 @@
     > a {
       position: relative;
       display: block;
-      color: $text-color;
-      padding: 4px 20px;
+      color: $base;
+      padding: $padding-default - 11 $padding-default+5;
       text-decoration: none;
       &:hover, &:focus {
         border-left: $border-left-default;
-        color: $brand-primary;
         padding-left: $padding-default+4;
+        color: $brand;
       }
     }
   }
@@ -53,38 +54,47 @@
   >.active>a{
     border-left: $border-left-primary;
     color: $brand;
-    padding-left: $padding-default+13;
-
+    padding-left: $padding-default+12;
+    font-weight: $font-weight-base;
     &:hover , &:focus {
       border-left: $border-left-primary;
-      padding-left: $padding-default+13;
+      padding-left: $padding-default+12;
+      color: $brand;
     }
   }
   > li >a{
     display: block;
-    padding: 4px 30px;
-    color: $text-color;
-    font-weight: $font-weight-base;
+    padding: $padding-default - 11 0 $padding-default - 11 $padding-default*2;
+    color: $base;
     text-decoration: none;
     &:hover , &:focus {
       border-left: $border-left-default;
-      color: $brand-primary;
       padding-left: $padding-default+14;
+      color: $brand;
     }
   }
 }
 .modal-footer {
-  padding-top: $padding-default;
-  border-top: $border-top;
-  margin-top: $margin-primary*3;
-  > p > a {
-    color: $text-color;
-    &:hover , &:focus {
-      color: $brand-primary;
-    }
-    > .gh-ico {
-      width: $height-default/5;
-      height: $height-default/5;
+  > .line {
+    margin: $margin-primary*2 0;
+    border-bottom: 2px solid $base-lighter;
+  }
+  > p {
+    color: $base;
+    > a {
+      color: $base;
+      text-decoration: inherit;
+      &:hover, &:focus {
+        color: $brand;
+      }
+      > .gh-ico {
+        width: $height-default/5;
+        height: $height-default/5;
+        opacity: 0.3;
+        &:hover, &:focus {
+          opacity: 1;
+        }
+      }
     }
   }
 }

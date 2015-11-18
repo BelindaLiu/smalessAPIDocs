@@ -17,8 +17,10 @@ body {
   -moz-font-feature-settings: "kern" 1; }
 
 h1 {
-  margin: 20px 0;
-  font-size: 36px; }
+  padding-top: 20px;
+  padding-bottom: 9px;
+  font-size: 36px;
+  margin: 0; }
 
 h3 {
   font-size: 24px;
@@ -30,8 +32,9 @@ h1, h3 {
   color: #383c45; }
 
 p {
-  color: #6a6d74;
-  margin: 0 0 10px; }
+  color: #383c45;
+  margin: 0 0 10px;
+  font-size: 14px; }
 
 table {
   background-color: transparent;
@@ -70,14 +73,6 @@ content {
   width: 875px;
   padding: 15px; }
 
-footer {
-  height: 100px;
-  background-color: white;
-  border-top: 2px solid #e8e8e8;
-  text-align: center; }
-  footer > p {
-    margin: 30px 0; }
-
 header {
   background-color: rgba(25, 30, 33, 0.96);
   margin-bottom: 50px;
@@ -89,12 +84,12 @@ header {
   header > .smaName {
     text-align: center;
     font-size: 20px;
-    color: #0060b4;
+    color: #5d95ff;
     font-weight: bold; }
   header > .smaDescribe {
     text-align: center;
     font-size: 18px;
-    color: #0060b4;
+    color: #5d95ff;
     opacity: 0.5; }
 
 sidebar {
@@ -102,12 +97,8 @@ sidebar {
   width: 250px;
   padding: 15px;
   margin-left: 350px;
-  position: absolute; }
-
-.explain {
-  font-size: 18px -3;
-  color: #6a6d74;
-  margin-bottom: 10px; }
+  position: absolute;
+  font-size: 14px; }
 
 .line {
   border-bottom: 1px solid #e1e2e3; }
@@ -118,15 +109,17 @@ sidebar {
 .nav {
   margin-bottom: 0;
   padding-left: 0;
-  list-style: none; }
+  list-style: none;
+  color: #e1e2e3; }
   .nav > .active > a {
-    border-left: 2px solid #0060b4;
-    font-weight: 700 !important;
-    color: #0060b4;
-    padding-left: 18px; }
+    border-left: 3px solid #5d95ff;
+    color: #5d95ff;
+    padding-left: 17px;
+    font-weight: 700 !important; }
     .nav > .active > a:hover, .nav > .active > a:focus {
-      border-left: 2px solid #0060b4;
-      padding-left: 18px; }
+      border-left: 3px solid #5d95ff;
+      padding-left: 17px;
+      color: #5d95ff; }
 
 .pills > li {
   position: relative;
@@ -134,47 +127,53 @@ sidebar {
   .pills > li > a {
     position: relative;
     display: block;
-    color: #3e4451;
+    color: #383c45;
     padding: 4px 20px;
     text-decoration: none; }
     .pills > li > a:hover, .pills > li > a:focus {
-      border-left: 1px solid #0060b4;
-      color: #0189ff;
-      padding-left: 19px; }
+      border-left: 1px solid #5d95ff;
+      padding-left: 19px;
+      color: #5d95ff; }
 
 .childHide {
   list-style: none;
   padding-left: 0 !important;
   display: none; }
   .childHide > .active > a {
-    border-left: 2px solid #0060b4;
-    color: #0060b4;
-    padding-left: 28px; }
+    border-left: 3px solid #5d95ff;
+    color: #5d95ff;
+    padding-left: 27px;
+    font-weight: 700 !important; }
     .childHide > .active > a:hover, .childHide > .active > a:focus {
-      border-left: 2px solid #0060b4;
-      padding-left: 28px; }
+      border-left: 3px solid #5d95ff;
+      padding-left: 27px;
+      color: #5d95ff; }
   .childHide > li > a {
     display: block;
-    padding: 4px 30px;
-    color: #3e4451;
-    font-weight: 500 !important;
+    padding: 4px 0 4px 30px;
+    color: #383c45;
     text-decoration: none; }
     .childHide > li > a:hover, .childHide > li > a:focus {
-      border-left: 1px solid #0060b4;
-      color: #0189ff;
-      padding-left: 29px; }
+      border-left: 1px solid #5d95ff;
+      padding-left: 29px;
+      color: #5d95ff; }
 
-.modal-footer {
-  padding-top: 15px;
-  border-top: 2px solid #e8e8e8;
-  margin-top: 30px; }
+.modal-footer > .line {
+  margin: 20px 0;
+  border-bottom: 2px solid #e1e2e3; }
+.modal-footer > p {
+  color: #383c45; }
   .modal-footer > p > a {
-    color: #3e4451; }
+    color: #383c45;
+    text-decoration: inherit; }
     .modal-footer > p > a:hover, .modal-footer > p > a:focus {
-      color: #0189ff; }
+      color: #5d95ff; }
     .modal-footer > p > a > .gh-ico {
       width: 20px;
-      height: 20px; }
+      height: 20px;
+      opacity: 0.3; }
+      .modal-footer > p > a > .gh-ico:hover, .modal-footer > p > a > .gh-ico:focus {
+        opacity: 1; }
 
 @media (min-width: 1200px) {
   .affix {

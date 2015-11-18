@@ -16,8 +16,10 @@ body {
   -moz-font-feature-settings: "kern" 1;
 }
 h1 {
-  margin: $margin-primary*2 0;
+  padding-top: $padding-default+5;
+  padding-bottom: $padding-default - 6;
   font-size: $font-size*2;
+  margin: 0;
 }
 h3 {
   font-size: $font-size+6;
@@ -29,8 +31,9 @@ h1,h3 {
   color: $base;
 }
 p {
-  color: $base-light;
+  color: $base;
   margin: 0 0 $margin-primary;
+  font-size: $font-size - 4;
 }
 
 table {
