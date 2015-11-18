@@ -6,7 +6,7 @@ body {
   color: #3e4451;
   margin: 0;
   font-family: "Lucida Grande", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Noto Sans CJK SC", "Heiti SC", "Microsoft YaHei", "WenQuanYi Microhei", sans-serif;
-  font-size: 14px;
+  font-size: $font-size -4;
   font-weight: normal;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -16,28 +16,21 @@ body {
   -moz-font-feature-settings: "kern" 1;
 }
 h1 {
-  padding-top: 20px;
-  padding-bottom: 9px;
-  margin: 10px 0;
-  font-size: 36px;
+  margin: $margin-primary*2 0;
+  font-size: $font-size*2;
 }
 h3 {
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  font-size: $font-size+6;
+  padding-top: $padding-default+5;
+  padding-bottom: $padding-default - 5;
   margin: 0;
 }
 h1,h3 {
   color: $base;
 }
-h5 {
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 p {
   color: $base-light;
-  margin: 0 0 10px;
+  margin: 0 0 $margin-primary;
 }
 
 table {
@@ -51,7 +44,6 @@ th {
 }
 ul ,ol {
   margin-top: 0;
-  margin-bottom: 10px;
 }
 ul {
   display: block;
@@ -59,13 +51,13 @@ ul {
 }
 dl {
   margin: 0;
-  padding: 8px;
+  padding: $padding-default - 7;
 }
 dt {
   float: left;
   text-align: right;
-  margin-right: 8px;
-  width: 100px;
+  margin-right: $margin-primary - 2;
+  width: $height-default;
 }
 dt, dd {
   line-height: 1.42857;

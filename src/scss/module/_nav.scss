@@ -1,6 +1,5 @@
 .active > ul {
-  display: block !important;
-  margin-bottom: 0px;
+  display: block;
 }
 .nav {
   margin-bottom: 0;
@@ -17,14 +16,14 @@
     }
   }
   > .active >a {
-    border-left: 2px solid $brand;
-    font-weight: 700 !important;
+    border-left: $border-left-primary;
+    font-weight: $font-weight-primary;
     color: $brand;
-    padding-left: 18px;
+    padding-left: $padding-default+3;
 
     &:hover , &:focus {
-      border-left: 2px solid $brand;
-      padding-left: 18px;
+      border-left: $border-left-primary;
+      padding-left: $padding-default+3;
     }
   }
 }
@@ -39,9 +38,9 @@
       padding: 4px 20px;
       text-decoration: none;
       &:hover, &:focus {
-        border-left: 1px solid $brand;
+        border-left: $border-left-default;
         color: $brand-primary;
-        padding-left: 19px;
+        padding-left: $padding-default+4;
       }
     }
   }
@@ -49,71 +48,71 @@
 
 .childHide{
   list-style: none;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
   display: none;
   >.active>a{
-    border-left: 2px solid $brand;
+    border-left: $border-left-primary;
     color: $brand;
-    padding-left: 28px;
+    padding-left: $padding-default+13;
 
     &:hover , &:focus {
-      border-left: 2px solid $brand;
-      padding-left: 28px;
+      border-left: $border-left-primary;
+      padding-left: $padding-default+13;
     }
   }
   > li >a{
     display: block;
     padding: 4px 30px;
     color: $text-color;
-    font-weight: 500 !important;
+    font-weight: $font-weight-base;
     text-decoration: none;
     &:hover , &:focus {
-      border-left: 1px solid $brand;
+      border-left: $border-left-default;
       color: $brand-primary;
-      padding-left: 29px;
+      padding-left: $padding-default+14;
     }
   }
 }
 .modal-footer {
-  padding-top: 15px;
-  border-top: 2px solid #e8e8e8;
-  margin-top: 30px;
+  padding-top: $padding-default;
+  border-top: $border-top;
+  margin-top: $margin-primary*3;
   > p > a {
     color: $text-color;
     &:hover , &:focus {
       color: $brand-primary;
     }
     > .gh-ico {
-      width: 20px;
-      height: 20px;
+      width: $height-default/5;
+      height: $height-default/5;
     }
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $primary-min-width) {
   .affix {
-    width: 220px;
-    top: 20px;
+    width: $width-default - 30;
+    top: $height-default/5;
     position: fixed;
   }
 }
-@media (min-width: 992px){
+@media (min-width: $base-min-width+1){
   .bs-docs-sidebar.affix {
     position: fixed;
-    top: 20px;
+    top: $height-default/5;
   }
 }
 .affix-top {
   position: relative;
-  margin-top: 38.760px;
+  margin-top: $margin-primary*3;
 }
 
-@media (max-width: 767px) {
+@media (max-width: $min-width) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: $min-width+1) and (max-width: $base-min-width) {
   .hidden-sm {
     display: none !important;
   }

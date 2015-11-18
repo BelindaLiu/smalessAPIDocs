@@ -1,10 +1,10 @@
 //Layout footer
 footer {
-  height: 150px;
+  height: $height-default;
   background-color: white;
-  border-top: 1px solid #e5e5e5;
+  border-top: $border-top;
   text-align: center;
   > p {
-    margin: 30px 0;
+    margin: $padding-default*2 0;
   }
 }

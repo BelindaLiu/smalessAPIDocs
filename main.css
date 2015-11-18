@@ -1,9 +1,5 @@
 /**----------------------------*/
 /**----------------------------*/
-/** Mixing Color varriable for creating both light and dark colors */
-/** Lighter colors */
-/** Darker colors */
-/** Generating Menu font color */
 body {
   height: 100%;
   margin: 0;
@@ -11,7 +7,7 @@ body {
   color: #3e4451;
   margin: 0;
   font-family: "Lucida Grande", "Helvetica Neue", "Arial", "Hiragino Sans GB", "Noto Sans CJK SC", "Heiti SC", "Microsoft YaHei", "WenQuanYi Microhei", sans-serif;
-  font-size: 14px;
+  font-size: 18px -4;
   font-weight: normal;
   letter-spacing: 0.01em;
   -webkit-font-smoothing: antialiased;
@@ -21,9 +17,7 @@ body {
   -moz-font-feature-settings: "kern" 1; }
 
 h1 {
-  padding-top: 20px;
-  padding-bottom: 9px;
-  margin: 10px 0;
+  margin: 20px 0;
   font-size: 36px; }
 
 h3 {
@@ -34,11 +28,6 @@ h3 {
 
 h1, h3 {
   color: #383c45; }
-
-h5 {
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 10px; }
 
 p {
   color: #6a6d74;
@@ -54,8 +43,7 @@ th {
   text-align: left; }
 
 ul, ol {
-  margin-top: 0;
-  margin-bottom: 10px; }
+  margin-top: 0; }
 
 ul {
   display: block;
@@ -76,21 +64,16 @@ dt, dd {
 
 /**----------------------------*/
 /**----------------------------*/
-/** Mixing Color varriable for creating both light and dark colors */
-/** Lighter colors */
-/** Darker colors */
-/** Generating Menu font color */
 content {
   display: block;
-  margin-left: 570px;
-  width: 880px;
-  min-height: 669px;
-  padding: 8px; }
+  margin-left: 630px;
+  width: 875px;
+  padding: 15px; }
 
 footer {
-  height: 150px;
+  height: 100px;
   background-color: white;
-  border-top: 1px solid #e5e5e5;
+  border-top: 2px solid #e8e8e8;
   text-align: center; }
   footer > p {
     margin: 30px 0; }
@@ -116,24 +99,21 @@ header {
 
 sidebar {
   display: block;
-  width: 220px;
+  width: 250px;
   padding: 15px;
-  margin-left: 320px;
+  margin-left: 350px;
   position: absolute; }
 
-.content-div {
-  font-size: 15px;
+.explain {
+  font-size: 18px -3;
   color: #6a6d74;
   margin-bottom: 10px; }
 
 .line {
-  border-bottom: 1px solid #e1e2e3;
-  margin-bottom: 15px;
-  margin-top: 15px; }
+  border-bottom: 1px solid #e1e2e3; }
 
 .active > ul {
-  display: block !important;
-  margin-bottom: 0px; }
+  display: block; }
 
 .nav {
   margin-bottom: 0;
@@ -164,7 +144,7 @@ sidebar {
 
 .childHide {
   list-style: none;
-  padding-left: 0px !important;
+  padding-left: 0 !important;
   display: none; }
   .childHide > .active > a {
     border-left: 2px solid #0060b4;
@@ -207,7 +187,7 @@ sidebar {
     top: 20px; } }
 .affix-top {
   position: relative;
-  margin-top: 38.760px; }
+  margin-top: 30px; }
 
 @media (max-width: 767px) {
   .hidden-xs {

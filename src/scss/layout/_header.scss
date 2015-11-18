@@ -1,21 +1,21 @@
 header {
   background-color: rgba(25, 30, 33, 0.96);
-  margin-bottom: 50px;
-  height: 300px;
+  margin-bottom: $margin-default/7;
+  height: $height-default*3;
   > .smaIcon {
-    height: 100px;
+    height: $height-default;
     text-align: center;
-    padding-top: 50px;
+    padding-top: $padding-default*3+5;
   }
   > .smaName {
     text-align: center;
-    font-size: 20px;
+    font-size: $font-size+2;
     color: $brand;
     font-weight: bold;
   }
   > .smaDescribe {
     text-align: center;
-    font-size: 18px;
+    font-size: $font-size;
     color: $brand;
     opacity: 0.5;
   }

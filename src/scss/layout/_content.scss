@@ -1,7 +1,6 @@
 content {
   display: block;
-  margin-left: $sidebar-margin+$sidebar-width+30px;
-  width: $sidebar-width*4;
-  min-height: 669px;
-  padding: 8px;
+  margin-left: $margin-default+$width-default+$padding-default*2;
+  width: $width-default*3.5;
+  padding: $padding-default;
 }
