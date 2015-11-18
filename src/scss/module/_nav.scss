@@ -32,7 +32,7 @@
     > a {
       position: relative;
       display: block;
-      color: $base;
+      color: $base-light;
       padding: $padding-default - 11 $padding-default+5;
       text-decoration: none;
       &:hover, &:focus {
@@ -62,7 +62,7 @@
   > li >a{
     display: block;
     padding: $padding-default - 11 0 $padding-default - 11 $padding-default*2;
-    color: $base;
+    color: $base-light;
     text-decoration: none;
     &:hover , &:focus {
       border-left: $border-left-default;
@@ -77,9 +77,9 @@
     border-bottom: $border-bottom;
   }
   > p {
-    color: $base;
+    color: $base-light;
     > a {
-      color: $base;
+      color: $base-light;
       text-decoration: inherit;
       &:hover, &:focus {
         color: $brand;

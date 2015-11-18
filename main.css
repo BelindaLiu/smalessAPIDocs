@@ -29,10 +29,10 @@ h3 {
   margin: 0; }
 
 h1, h3 {
-  color: #383c45; }
+  color: #6a6d74; }
 
 p {
-  color: #383c45;
+  color: #6a6d74;
   margin: 0 0 10px;
   font-size: 14px; }
 
@@ -168,7 +168,7 @@ header {
   .pills > li > a {
     position: relative;
     display: block;
-    color: #383c45;
+    color: #6a6d74;
     padding: 4px 20px;
     text-decoration: none; }
     .pills > li > a:hover, .pills > li > a:focus {
@@ -192,7 +192,7 @@ header {
   .childHide > li > a {
     display: block;
     padding: 4px 0 4px 30px;
-    color: #383c45;
+    color: #6a6d74;
     text-decoration: none; }
     .childHide > li > a:hover, .childHide > li > a:focus {
       border-left: 1px solid #5d95ff;
@@ -203,9 +203,9 @@ header {
   margin: 20px 0;
   border-bottom: 2px solid #e1e2e3; }
 .modal-footer > p {
-  color: #383c45; }
+  color: #6a6d74; }
   .modal-footer > p > a {
-    color: #383c45;
+    color: #6a6d74;
     text-decoration: inherit; }
     .modal-footer > p > a:hover, .modal-footer > p > a:focus {
       color: #5d95ff; }
