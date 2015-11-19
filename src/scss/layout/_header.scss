@@ -1,22 +1,22 @@
 header {
   background-color: rgba(25, 30, 33, 0.96);
   margin-bottom: $margin-default/7;
-  height: $height-default*3;
   > .smaIcon {
-    height: $height-default;
     text-align: center;
-    padding-top: $padding-default*3+5;
-  }
-  > .smaName {
-    text-align: center;
-    font-size: $font-size+2;
-    color: $brand;
-    font-weight: bold;
-  }
-  > .smaDescribe {
-    text-align: center;
-    font-size: $font-size;
-    color: $brand;
-    opacity: 0.5;
+    padding: $padding-default*4+10 0;
+    > .smaName {
+      text-align: center;
+      font-size: $font-size+2;
+      color: $brand;
+      font-weight: bold;
+      margin: $margin-primary 0;
+    }
+    > .smaDescribe {
+      text-align: center;
+      font-size: $font-size;
+      color: $brand;
+      opacity: 0.5;
+      margin-top: $margin-primary+ -15;
+    }
   }
 }
