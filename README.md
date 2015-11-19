@@ -12,8 +12,8 @@
 
 ### Step 1
 ```
-git clone https://github.com/emily123/smaless
-cd smaless
+git clone https://github.com/BelindaLiu/smalessAPIDocs.git
+cd smalessAPIDocs
 ```
 ### Step 2
 ```
