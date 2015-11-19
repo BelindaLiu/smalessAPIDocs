@@ -92,6 +92,14 @@ html(lang='en')
                         li
                            a(href="#pagination-size") Pagination sizing
 
+                  li
+                     a(href="#footer") Footer
+                     ul.childHide
+                        li
+                           a(href="#dashboard-footer") Dashboard footer
+                        li
+                           a(href="#login-footer") Login footer
+
                   .modal-footer
                      .line
                      p
@@ -119,6 +127,9 @@ html(lang='en')
 
                #pagination
                   include jade/pagination
+
+               #footer
+                  include jade/footer
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')
