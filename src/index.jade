@@ -100,6 +100,14 @@ html(lang='en')
                         li
                            a(href="#login-footer") Login footer
 
+                  li
+                     a(href="#sidebar") Sidebar
+                     ul.childHide
+                        li
+                           a(href="#")
+                        li
+                           a(href="#")
+
                   .modal-footer
                      .line
                      p
@@ -130,6 +138,9 @@ html(lang='en')
 
                #footer
                   include jade/footer
+
+               #sidebar
+                  include jade/sidebar
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')

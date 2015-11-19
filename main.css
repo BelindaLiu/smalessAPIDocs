@@ -65,8 +65,6 @@ dt {
 dt, dd {
   line-height: 1.42857; }
 
-/**----------------------------*/
-/**----------------------------*/
 header {
   background-color: rgba(25, 30, 33, 0.96);
   margin-bottom: 50px; }
@@ -86,10 +84,15 @@ header {
       opacity: 0.5;
       margin-top: -5px; }
 
+/**----------------------------*/
+/**----------------------------*/
 .explain {
   font-size: 14px;
   color: #383c45;
   margin-bottom: 10px; }
+  .explain .btn-color {
+    color: #f55952;
+    background-color: #feefee; }
 
 .container {
   margin-right: auto;
