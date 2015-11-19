@@ -148,7 +148,8 @@ header {
     width: 75%;
     float: right; } }
 .line {
-  border-bottom: 1px solid #e1e2e3; }
+  border-bottom: 1px solid #e1e2e3;
+  margin-bottom: 10px; }
 
 .nav {
   margin-bottom: 0;
