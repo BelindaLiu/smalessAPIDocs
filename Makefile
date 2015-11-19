@@ -4,6 +4,8 @@ env:
 	npm install
 	rm -rf bower_components
 	bower install
+	sudo gem install sass
+	sudo npm install jade -g
 
 # build output files by grunt
 # you can modify Gruntfile.coffee to change tasks

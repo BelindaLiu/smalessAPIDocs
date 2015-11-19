@@ -4,6 +4,7 @@
   "description": "API document of smaless",
   "devDependencies": {
     "grunt": "0.4.5",
+    "bower": "1.6.3",
     "grunt-contrib-clean": "0.6.0",
     "grunt-contrib-copy": "^0.8.2",
     "grunt-contrib-jade": "0.15.0",

@@ -12,7 +12,7 @@
 
 ### Step 1
 ```
-git clone git@github.com:emily123/smaless.git
+git clone https://github.com/emily123/smaless
 cd smaless
 ```
 ### Step 2
