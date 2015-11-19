@@ -29,10 +29,6 @@ module.exports = (grunt)->
           "index.html": "src/index.jade"
 
     shell:
-#      installSASS:
-#        command: 'sudo gem install sass'
-#      installJADE:
-#        command: 'sudo npm install jade -g'
       concatScss:
         command: 'node concatSass.js'
       runSassDoc:
@@ -46,6 +42,5 @@ module.exports = (grunt)->
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-copy'
 
-#  grunt.registerTask "buildEnv", ["shell:installSASS", "shell:installJADE"]
   grunt.registerTask "build", ["shell:runSassDoc", "shell:concatScss", "sass", "coffee:demo", "jade:demo"]
   grunt.registerTask "default", ["build"]
