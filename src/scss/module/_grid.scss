@@ -3,6 +3,7 @@
   margin-left: auto;
   padding-left: $padding-default;
   padding-right: $padding-default;
+  margin-bottom: $margin-primary*5;
 }
 .container:before, .container:after {
   content: " ";
