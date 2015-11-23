@@ -94,6 +94,9 @@ header {
     color: #f55952;
     background-color: #feefee; }
 
+.btn-size {
+  margin-top: 10px; }
+
 .container {
   margin-right: auto;
   margin-left: auto;
