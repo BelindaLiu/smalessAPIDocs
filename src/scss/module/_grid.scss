@@ -67,15 +67,14 @@
   position: relative;
   padding-right: $padding-default;
   padding-left: $padding-default;
+  float: left;
 }
 
 @media (min-width: $base-min-width) {
   .col-md-3 {
     width: 20%;
-    float: left;
   }
   .col-md-9 {
     width: 75%;
-    float: right;
   }
 }
