@@ -3,10 +3,6 @@
 /**----------------------------*/
 
 /// Base Color
-/// {
-///   start: 12,
-///   end: 14,
-/// }
 /// --------------------------------------------------
 
 $brand:             #5d95ff !default;
@@ -60,9 +56,9 @@ $border-bottom:                      2px solid $base-lighter;
 
 /// min-width
 $min-width:                     768px;
-$base-min-width:                992px;
+$base-min-width:                1000px;
 $primary-min-width:             1200px;
 
-//screen
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
+////screen
+//$screen-md:                  992px !default;
+//$screen-md-min:              $screen-md !default;

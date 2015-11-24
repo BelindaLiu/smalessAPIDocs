@@ -1,3 +1,7 @@
+.active > ul {
+  display: block !important;
+  margin-bottom: 0px;
+}
 .nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
@@ -97,7 +101,7 @@
 }
 
 
-@media (min-width: $primary-min-width) {
+@media (min-width: $primary-width) {
   .affix {
     top: $base-top;
     position: fixed;
@@ -114,12 +118,12 @@
   padding-top: $padding-default+10;
 }
 
-@media (max-width: $min-width - 1) {
+@media (max-width: $base-min-width - 1) {
   .hidden-xs {
     display: none !important;
   }
 }
-@media (min-width: $min-width) and (max-width: $base-min-width - 1) {
+@media (min-width: $base-min-width) and (max-width: $primary-width - 1) {
   .hidden-sm {
     display: none !important;
   }
