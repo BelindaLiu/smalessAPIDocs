@@ -1,3 +1,4 @@
+/// The description of the module
 .explain {
   font-size: $font-size - 4;
   color: $base;
@@ -7,6 +8,8 @@
     background-color: $code-red-white;
   }
 }
+
+/// special description for button size
 .btn-size {
   margin-top: $margin-primary;
 }

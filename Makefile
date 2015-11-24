@@ -13,6 +13,5 @@ build:
 	# clear old output files
 	rm -f src/main.scss
 	rm -f main.css
-	rm -rf output
 	rm -rf sassDoc
 	grunt
