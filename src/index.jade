@@ -104,7 +104,10 @@ html(lang='en')
                      a(href="#sidebar") Sidebar
 
                   li
-                     a(href="#content-title") Content title
+                     a(href="#content") Content
+                     ul.childHide
+                        li
+                           a(href="#content-title") Content title
 
                   .modal-footer
                      .line
@@ -141,8 +144,8 @@ html(lang='en')
                #sidebar
                   include jade/sidebar
 
-               #content-title
-                  include jade/content title
+               #content
+                  include jade/content
 
       script(type='text/javascript' src='bower_components/jquery/dist/jquery.js')
       script(type='text/javascript' src='bower_components/bootstrap/dist/js/bootstrap.js')

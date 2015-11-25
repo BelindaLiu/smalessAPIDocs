@@ -1,11 +1,11 @@
-///
-/// Grid system
-/// --------------------------------------------------
+//
+// Grid system
+// --------------------------------------------------
 
 
-/// Container widths
-///
-/// Set the container width, and override it for fixed navbars in media queries.
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
 
 .container {
   margin-right: auto;
@@ -13,21 +13,26 @@
   padding-left: $padding-default;
   padding-right: $padding-default;
   margin-bottom: $margin-primary*5;
-  @media (min-width: $min-width) {
+}
+@media (min-width: $min-width) {
+  .container {
     width: $base-width;
   }
-  @media (min-width: $base-min-width) {
+}
+@media (min-width: $base-min-width) {
+  .container {
     width: $default-width;
   }
-  @media (min-width: $primary-min-width) {
+}
+@media (min-width: $primary-min-width) {
+  .container {
     width: $primary-width;
   }
 }
 
-
-/// Row
-///
-/// Rows contain and clear the floats of your columns.
+// Row
+//
+// Rows contain and clear the floats of your columns.
 
 .row {
   margin-left: -($margin-primary+5);
@@ -36,6 +41,13 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
 }
 
 .col-md-3,.col-md-9 {

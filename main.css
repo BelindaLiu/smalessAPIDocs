@@ -75,22 +75,29 @@ header {
   padding-left: 15px;
   padding-right: 15px;
   margin-bottom: 50px; }
-  @media (min-width: 768px) {
-    .container {
-      width: 750px; } }
-  @media (min-width: 1014px) {
-    .container {
-      width: 970px; } }
-  @media (min-width: 1345px) {
-    .container {
-      width: 1300px; } }
 
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+@media (min-width: 1014px) {
+  .container {
+    width: 970px; } }
+@media (min-width: 1345px) {
+  .container {
+    width: 1300px; } }
 .row {
   margin-left: -15px;
   margin-right: -15px; }
   .row .row {
     margin-left: 0;
     margin-right: 0; }
+
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
 
 .col-md-3, .col-md-9 {
   position: relative;

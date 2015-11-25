@@ -2,27 +2,37 @@
 /// @group Variables
 /// @since 0.2.0
 $brand:             #5d95ff !default;
+/// @group Variables
 $brand-primary:     #0189FF !default;
+/// @group Variables
 $brand-light:       #5d95ff !default;
 
 /// Text color
 /// @group Variables
 $base:                  #383c45 !default;//transparency 0%
+/// @group Variables
 $base-light:            #6a6d74 !default;//transparency 25%
+/// @group Variables
 $base-lighter:          #e1e2e3 !default;//transparency 85%
+/// @group Variables
 $base-lightest:         #f5f5f6 !default;//transparency 95%
 
 /// code color
 /// @group Variables
 $code-red-dark:         #c44742 !default;
+/// @group Variables
 $code-red:              #f55952 !default;
+/// @group Variables
 $code-red-white:        #feefee !default;
+/// @group Variables
 $code-blue:             #47b2fa !default;
+/// @group Variables
 $code-purple:           #6d60b1 !default;
 
 /// fonts
 /// @group Variables
 $font-size:                       18px;
+/// @group Variables
 $font-weight-base:                700 !important;
 
 /// width
@@ -36,6 +46,7 @@ $padding-default:                 15px;
 /// margin
 /// @group Variables
 $margin-default:                  350px;
+/// @group Variables
 $margin-primary:                  10px;
 
 /// height
@@ -45,7 +56,9 @@ $height-default:                  100px;
 /// width
 /// @group Variables
 $base-width:                      750px;
+/// @group Variables
 $default-width:                   970px;
+/// @group Variables
 $primary-width:                   1300px;
 
 /// top
@@ -55,12 +68,17 @@ $base-top:                        20px;
 /// border
 /// @group Variables
 $border:                             1px solid $base-lighter;
+/// @group Variables
 $border-bottom:                      2px solid $base-lighter;
+/// @group Variables
 $border-left-default:                1px solid $brand;
+/// @group Variables
 $border-left-primary:                3px solid $brand;
 
 /// screen
 /// @group Variables
 $min-width:                     768px;
+/// @group Variables
 $base-min-width:                1014px;
+/// @group Variables
 $primary-min-width:             1345px;
