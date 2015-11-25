@@ -1,8 +1,6 @@
 /* Body Triggers for layout options
 ------------------------------------------------------------------
 */
-/**----------------------------*/
-/**----------------------------*/
 body {
   height: 100%;
   margin: 0;
@@ -87,15 +85,23 @@ header {
       opacity: 0.5;
       margin-top: -5px; }
 
-/**----------------------------*/
-/**----------------------------*/
 .explain {
   font-size: 14px;
   color: #383c45;
   margin-bottom: 10px; }
-  .explain .btn-color {
+  .explain > .btn-color {
+    margin: 0 4px;
+    padding: 2px 4px;
+    font-size: 90%;
     color: #f55952;
-    background-color: #feefee; }
+    background-color: #feefee;
+    border-radius: 4px; }
+    .explain > .btn-color > code {
+      padding: 2px 4px;
+      font-size: 90%;
+      color: #f55952;
+      background-color: #feefee;
+      border-radius: 4px; }
 
 .btn-size {
   margin-top: 10px; }
@@ -240,7 +246,7 @@ header {
     top: 20px;
     position: fixed; } }
 @media (min-width: 1014px) {
-  .bs-docs-sidebar.affix {
+  .affix {
     position: fixed;
     top: 20px; } }
 .affix-top {

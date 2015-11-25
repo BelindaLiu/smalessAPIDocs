@@ -3,9 +3,20 @@
   font-size: $font-size - 4;
   color: $base;
   margin-bottom: $margin-primary;
-  .btn-color {
+  > .btn-color {
+    margin: 0 $margin-primary+ -6;
+    padding: $margin-primary+ -8 $margin-primary+ -6;
+    font-size: 90%;
     color: $code-red;
     background-color: $code-red-white;
+    border-radius: 4px;
+    >  code {
+        padding: 2px 4px;
+        font-size: 90%;
+        color: $code-red;
+        background-color: $code-red-white;
+        border-radius: 4px;
+    }
   }
 }
 

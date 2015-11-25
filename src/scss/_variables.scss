@@ -1,60 +1,65 @@
-/**----------------------------*/
-///Variables
-/**----------------------------*/
-
-/// Base Color
-/// --------------------------------------------------
-
+/// base color
+/// @group Variables
 $brand:             #5d95ff !default;
 $brand-primary:     #0189FF !default;
 $brand-light:       #5d95ff !default;
 
-///Text color
-$base:                  #383c45;//transparency 0%
-$base-light:            #6a6d74;//transparency 25%
-$base-lighter:          #e1e2e3;//transparency 85%
-$base-lightest:         #f5f5f6;//transparency 95%
+/// Text color
+/// @group Variables
+$base:                  #383c45 !default;//transparency 0%
+$base-light:            #6a6d74 !default;//transparency 25%
+$base-lighter:          #e1e2e3 !default;//transparency 85%
+$base-lightest:         #f5f5f6 !default;//transparency 95%
 
-///code color
-$code-red-dark:         #c44742;
-$code-red:              #f55952;
-$code-red-white:        #feefee;
-$code-blue:             #47b2fa;
-$code-purple:           #6d60b1;
+/// code color
+/// @group Variables
+$code-red-dark:         #c44742 !default;
+$code-red:              #f55952 !default;
+$code-red-white:        #feefee !default;
+$code-blue:             #47b2fa !default;
+$code-purple:           #6d60b1 !default;
 
-///font
+/// fonts
+/// @group Variables
 $font-size:                       18px;
 $font-weight-base:                700 !important;
 
-///width
+/// width
+/// @group Variables
 $width-default:                   250px;
 
-///padding
+/// padding
+/// @group Variables
 $padding-default:                 15px;
 
-///margin
+/// margin
+/// @group Variables
 $margin-default:                  350px;
 $margin-primary:                  10px;
 
-///height
+/// height
+/// @group Variables
 $height-default:                  100px;
 
-///width
+/// width
+/// @group Variables
 $base-width:                      750px;
 $default-width:                   970px;
 $primary-width:                   1300px;
 
-///top
+/// top
+/// @group Variables
 $base-top:                        20px;
 
-//border
-$border-left-default:                1px solid $brand;
-$border-left-primary:                3px solid $brand;
+/// border
+/// @group Variables
 $border:                             1px solid $base-lighter;
 $border-bottom:                      2px solid $base-lighter;
+$border-left-default:                1px solid $brand;
+$border-left-primary:                3px solid $brand;
 
-
-//min-width
+/// screen
+/// @group Variables
 $min-width:                     768px;
 $base-min-width:                1014px;
 $primary-min-width:             1345px;
