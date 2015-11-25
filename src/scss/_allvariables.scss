@@ -30,7 +30,7 @@ $code-blue:             #47b2fa !default;
 $code-purple:           #6d60b1 !default;
 
 /// fonts
-/// @example
+/// @example $font-weight:                700 !important;
 /// @group Variables
 $font-size:                       18px;
 $font-weight:                700 !important;
@@ -44,9 +44,9 @@ $width-default:                   250px;
 $padding-default:                 15px;
 
 /// margin
+/// @example $margin-primary:                  10px;
 /// @group Variables
 $margin-default:                  350px;
-/// @group Variables
 $margin-primary:                  10px;
 
 /// height
@@ -54,11 +54,11 @@ $margin-primary:                  10px;
 $height-default:                  100px;
 
 /// width
+/// @example $default-width:                   970px;
+/// @example $primary-width:                   1300px;
 /// @group Variables
 $base-width:                      750px;
-/// @group Variables
 $default-width:                   970px;
-/// @group Variables
 $primary-width:                   1300px;
 
 /// top
@@ -66,19 +66,19 @@ $primary-width:                   1300px;
 $base-top:                        20px;
 
 /// border
+/// @example $border-bottom:                      2px solid $base-lighter;
+/// @example $border-left-default:                1px solid $brand;
+/// @example $border-left-primary:                3px solid $brand;
 /// @group Variables
 $border:                             1px solid $base-lighter;
-/// @group Variables
 $border-bottom:                      2px solid $base-lighter;
-/// @group Variables
 $border-left-default:                1px solid $brand;
-/// @group Variables
 $border-left-primary:                3px solid $brand;
 
 /// screen
+/// @example $base-min-width:                1014px;
+/// @example $primary-min-width:             1345px;
 /// @group Variables
 $min-width:                     768px;
-/// @group Variables
 $base-min-width:                1014px;
-/// @group Variables
 $primary-min-width:             1345px;
