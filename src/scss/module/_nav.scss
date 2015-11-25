@@ -1,7 +1,11 @@
-.active > ul {
-  display: block !important;
-  margin-bottom: 0px;
-}
+///
+/// Navs
+/// --------------------------------------------------
+
+
+/// Base class
+/// --------------------------------------------------
+
 .nav {
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
@@ -17,6 +21,10 @@
       clear: both;
     }
   }
+  > .active > ul {
+    display: block !important;
+    margin-bottom: 0;
+  }
   > .active >a {
     border-left: $border-left-primary;
     color: $brand;
@@ -29,6 +37,9 @@
     }
   }
 }
+
+/// Pills
+/// -------------------------
 .pills {
   > li {
     position: relative;
@@ -48,6 +59,8 @@
   }
 }
 
+/// ChildHide
+/// --------------------------
 .childHide{
   list-style: none;
   padding-left: 0 !important;
@@ -75,6 +88,8 @@
     }
   }
 }
+
+/// Footer (for actions)
 .modal-footer {
   > .line {
     margin: $margin-primary*2 0;
@@ -103,19 +118,18 @@
 
 @media (min-width: $primary-min-width) {
   .affix {
-    top: $base-top;
+    top: 0;
     position: fixed;
   }
 }
 @media (min-width: $base-min-width){
   .affix {
     position: fixed;
-    top: $base-top;
+    top: 0;
   }
 }
 .affix-top {
   position: relative;
-  padding-top: $padding-default+10;
 }
 
 @media (max-width: $min-width - 1) {
