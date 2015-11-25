@@ -1,39 +1,39 @@
 /// base color
+/// @example $brand-primary:     #0189FF !default;
+/// @example $brand-light:       #5d95ff !default;
 /// @group Variables
 /// @since 0.2.0
 $brand:             #5d95ff !default;
-/// @group Variables
 $brand-primary:     #0189FF !default;
-/// @group Variables
 $brand-light:       #5d95ff !default;
 
 /// Text color
+/// @example $base-light:            #6a6d74 !default;
+/// @example $base-lighter:          #e1e2e3 !default;
+/// @example $base-lightest:         #f5f5f6 !default;
 /// @group Variables
-$base:                  #383c45 !default;//transparency 0%
-/// @group Variables
-$base-light:            #6a6d74 !default;//transparency 25%
-/// @group Variables
-$base-lighter:          #e1e2e3 !default;//transparency 85%
-/// @group Variables
-$base-lightest:         #f5f5f6 !default;//transparency 95%
+$base:                  #383c45 !default;/// transparency 0%
+$base-light:            #6a6d74 !default;/// transparency 25%
+$base-lighter:          #e1e2e3 !default;/// transparency 85%
+$base-lightest:         #f5f5f6 !default;/// transparency 95%
 
 /// code color
-/// @group Variables
-$code-red-dark:         #c44742 !default;
+/// @example $code-red-dark:         #c44742 !default;
+/// @example $code-red-white:        #feefee !default;
+/// @example $code-blue:             #47b2fa !default;
+/// @example $code-purple:           #6d60b1 !default;
 /// @group Variables
 $code-red:              #f55952 !default;
-/// @group Variables
+$code-red-dark:         #c44742 !default;
 $code-red-white:        #feefee !default;
-/// @group Variables
 $code-blue:             #47b2fa !default;
-/// @group Variables
 $code-purple:           #6d60b1 !default;
 
 /// fonts
+/// @example
 /// @group Variables
 $font-size:                       18px;
-/// @group Variables
-$font-weight-base:                700 !important;
+$font-weight:                700 !important;
 
 /// width
 /// @group Variables

@@ -163,8 +163,7 @@ header {
   .childHide > .active > a {
     border-left: 3px solid #5d95ff;
     color: #5d95ff;
-    padding-left: 27px;
-    font-weight: 700 !important; }
+    padding-left: 27px; }
     .childHide > .active > a:hover, .childHide > .active > a:focus {
       border-left: 3px solid #5d95ff;
       padding-left: 27px;

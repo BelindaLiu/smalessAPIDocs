@@ -29,7 +29,7 @@
     border-left: $border-left-primary;
     color: $brand;
     padding-left: $padding-default+2;
-    font-weight: $font-weight-base;
+    font-weight: $font-weight;
     &:hover , &:focus {
       border-left: $border-left-primary;
       padding-left: $padding-default+2;
@@ -69,7 +69,6 @@
     border-left: $border-left-primary;
     color: $brand;
     padding-left: $padding-default+12;
-    font-weight: $font-weight-base;
     &:hover , &:focus {
       border-left: $border-left-primary;
       padding-left: $padding-default+12;
