@@ -114,7 +114,8 @@
   }
 }
 
-
+/// For Affix plugin
+/// -------------------------
 @media (min-width: $primary-min-width) {
   .affix {
     top: 0;
@@ -131,6 +132,7 @@
   position: relative;
 }
 
+/// Hide from screenreaders and browsers
 @media (max-width: $min-width - 1) {
   .hidden-xs {
     display: none !important;
