@@ -62,7 +62,7 @@ header {
     font-size: 90%;
     color: #f55952;
     background-color: #feefee;
-    border-radius: 4px; }
+    border-radius: 1px; }
     .explain > .btn-color > code {
       font-size: 90%; }
 
@@ -212,5 +212,3 @@ header {
 @media (min-width: 768px) and (max-width: 1013px) {
   .hidden-sm {
     display: none !important; } }
-
-/*# sourceMappingURL=main.css.map */
