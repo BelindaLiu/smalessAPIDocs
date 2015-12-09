@@ -4,15 +4,15 @@
 
 ### [GitHub](https://github.com/emily123/smaless)
 
-### [smaless API Document](http://belindaliu.github.io/smalessAPIDocs)
+### [smaless API Document](http://mario56.github.io/smalessAPIDocs/)
 
 ## smalessAPIDocs
 
-### [GitHub](https://github.com/BelindaLiu/smalessAPIDocs)
+### [GitHub](https://github.com/mario56/smalessAPIDocs)
 
 ### Step 1
 ```
-git clone https://github.com/BelindaLiu/smalessAPIDocs.git
+git clone https://github.com/mario56/smalessAPIDocs.git
 cd smalessAPIDocs
 ```
 ### Step 2
