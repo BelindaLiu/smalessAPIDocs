@@ -22,6 +22,7 @@ module.exports = (grunt)->
     jade:
       demo:
         options:
+          pretty: true
           data:
             debug: true,
             timestamp: "<%= new Date().getTime() %>"
